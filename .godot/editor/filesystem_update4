@@ -1,5 +1,2 @@
-res://scenes/player.tscn
-res://scripts/character_state_machine.gd
-res://scripts/GroundState.gd
-res://scripts/State.gd
 res://scenes/level.tscn
+res://scenes/player.tscn

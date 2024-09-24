@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726971118
+::res://::1727147375
 icon.svg::CompressedTexture2D::5814638739882052501::1726953374::1726953399::1::::<><>::
 ::res://addons/::1726953374
 ::res://addons/godot-git-plugin/::1726953374
@@ -8,7 +8,7 @@ plugin.cfg::TextFile::-1::1726953374::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1726953374::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1726953374
 ::res://addons/godot-git-plugin/macos/::1726953374
-::res://addons/godot-git-plugin/win64/::1726971115
+::res://addons/godot-git-plugin/win64/::1727147371
 ::res://assets/::1726953399
 Keyboard Extras.png::CompressedTexture2D::9120505288231299620::1726953374::1726953399::1::::<><>::
 Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1726953374::1726953399::1::::<><>::
@@ -246,15 +246,15 @@ Skeleton Hit.png::CompressedTexture2D::69678310304195163::1726953374::1726953399
 Skeleton Idle.png::CompressedTexture2D::577356391568561742::1726953374::1726953399::1::::<><>::
 Skeleton React.png::CompressedTexture2D::8345037671104482333::1726953374::1726953399::1::::<><>::
 Skeleton Walk.png::CompressedTexture2D::7013810590018654546::1726953374::1726953399::1::::<><>::
-::res://scenes/::1726971105
-level.tscn::PackedScene::5990108406888525160::1726970436::0::1::::<><>::uid://duq4xou045kv6::::res://assets/Textures-16.png<>uid://byk22k2gt7eul::::res://scenes/player.tscn
-player.tscn::PackedScene::4093284851029089395::1726971105::0::1::::<><>::res://scripts/player.gd<>uid://ct0r7eoctn1wc::::res://assets/Red hood free (zipped) Folder/red hood itch free Copy-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd
+::res://scenes/::1726972820
+level.tscn::PackedScene::5990108406888525160::1726972805::0::1::::<><>::uid://duq4xou045kv6::::res://assets/Textures-16.png<>uid://byk22k2gt7eul::::res://scenes/player.tscn
+player.tscn::PackedScene::4093284851029089395::1726972820::0::1::::<><>::res://scripts/player.gd<>uid://ct0r7eoctn1wc::::res://assets/Red hood free (zipped) Folder/red hood itch free Copy-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd
 statedebuglabel.gd::GDScript::-1::1726970017::0::1::::<>Label<>::
-::res://scripts/::1726970324
+::res://scripts/::1726972820
 AirState.gd::GDScript::-1::1726970324::0::1::::AirState<>State<>::
-character_state_machine.gd::GDScript::-1::1726970324::0::1::::CharacterStateMachine<>Node<>::
-GroundState.gd::GDScript::-1::1726970059::0::1::::GroundState<>State<>::
+character_state_machine.gd::GDScript::-1::1726972538::0::1::::CharacterStateMachine<>Node<>::
+GroundState.gd::GDScript::-1::1726972820::0::1::::GroundState<>State<>::
 LandingState.gd::GDScript::-1::1726955789::0::1::::LandingState<>State<>::
 player.gd::GDScript::-1::1726969134::0::1::::<>CharacterBody2D<>::
-State.gd::GDScript::-1::1726970324::0::1::::State<>Node<>::
+State.gd::GDScript::-1::1726972538::0::1::::State<>Node<>::
 state_machine.gd::GDScript::-1::1726955443::0::1::::<>Node<>::
