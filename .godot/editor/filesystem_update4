@@ -2,3 +2,5 @@ res://scenes/level.tscn
 res://scenes/player.tscn
 res://scripts/AirState.gd
 res://scripts/LandingState.gd
+res://scripts/slidingState.gd
+res://scripts/GroundState.gd
