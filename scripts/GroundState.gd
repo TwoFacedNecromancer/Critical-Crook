@@ -7,7 +7,7 @@ class_name GroundState
 @export var air_state : State
 @export var jump_animation : String = "jump_start"
 
-		
+	
 
 func state_input(event : InputEvent):
 	if(event.is_action_pressed("jump")):
