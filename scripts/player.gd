@@ -59,9 +59,9 @@ func update_animation():
 func update_facing_direction():
 	var direction = Input.get_vector("left", "right", "up", "down")
 	if direction.x < 0:
-		sprite.flip_h = false
-	elif direction.x > 0:
 		sprite.flip_h = true
+	elif direction.x > 0:
+		sprite.flip_h = false
 		
 	
 

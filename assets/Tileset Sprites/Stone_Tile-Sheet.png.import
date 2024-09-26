@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct0r7eoctn1wc"
-path="res://.godot/imported/red hood itch free Copy-Sheet.png-cc72d2508d58127fd345d9d7ef117dc1.ctex"
+uid="uid://lvdqhufj5rej"
+path="res://.godot/imported/Stone_Tile-Sheet.png-97e284a9fd873d6f655254755c9dec24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Red hood free (zipped) Folder/red hood itch free Copy-Sheet.png"
-dest_files=["res://.godot/imported/red hood itch free Copy-Sheet.png-cc72d2508d58127fd345d9d7ef117dc1.ctex"]
+source_file="res://assets/Tileset Sprites/Stone_Tile-Sheet.png"
+dest_files=["res://.godot/imported/Stone_Tile-Sheet.png-97e284a9fd873d6f655254755c9dec24.ctex"]
 
 [params]
 
