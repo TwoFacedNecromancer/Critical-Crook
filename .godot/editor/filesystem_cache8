@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1727364385
+::res://::1727575996
 icon.svg::CompressedTexture2D::5814638739882052501::1727363546::1727363551::1::::<><>::
 ::res://addons/::1727363546
 ::res://addons/godot-git-plugin/::1727363546
@@ -247,19 +247,21 @@ Skeleton React.png::CompressedTexture2D::8345037671104482333::1727363546::172736
 Skeleton Walk.png::CompressedTexture2D::7013810590018654546::1727363546::1727363551::1::::<><>::
 ::res://assets/Tileset Sprites/::1727363551
 Stone_Tile-Sheet.png::CompressedTexture2D::815640335334331637::1727363546::1727363551::1::::<><>::
-::res://assets/Weathered Knight Sprite/::1727365070
+::res://assets/Weathered Knight Sprite/::1727365260
 Weathered_Knight-Sheet.png::CompressedTexture2D::2801763455999876928::1727363546::1727365260::1::::<><>::
-::res://scenes/::1727364999
-level.tscn::PackedScene::5990108406888525160::1727364999::0::1::::<><>::uid://lvdqhufj5rej::::res://assets/Tileset Sprites/Stone_Tile-Sheet.png<>uid://byk22k2gt7eul::::res://scenes/player.tscn
-player.tscn::PackedScene::4093284851029089395::1727365232::0::1::::<><>::res://scripts/player.gd<>uid://bf6gvt2kdk137::::res://assets/Weathered Knight Sprite/Weathered_Knight-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd
+::res://scenes/::1727454871
+level.tscn::PackedScene::5990108406888525160::1727449013::0::1::::<><>::uid://lvdqhufj5rej::::res://assets/Tileset Sprites/Stone_Tile-Sheet.png<>uid://byk22k2gt7eul::::res://scenes/player.tscn
+player.tscn::PackedScene::4093284851029089395::1727454871::0::1::::<><>::res://scripts/player.gd<>uid://bf6gvt2kdk137::::res://assets/Weathered Knight Sprite/Weathered_Knight-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd
 statedebuglabel.gd::GDScript::-1::1727363546::0::1::::<>Label<>::
-::res://scripts/::1727364400
-AirState.gd::GDScript::-1::1727363546::0::1::::AirState<>State<>::
+::res://scripts/::1727448527
+AirState.gd::GDScript::-1::1727447886::0::1::::AirState<>State<>::
 character_state_machine.gd::GDScript::-1::1727363546::0::1::::CharacterStateMachine<>Node<>::
-GroundState.gd::GDScript::-1::1727364252::0::1::::GroundState<>State<>::
+climbing.gd::GDScript::-1::1727375319::0::1::::<>Node<>::
+climbingState.gd::GDScript::-1::1727448527::0::1::::ClimbingState<>State<>::
+GroundState.gd::GDScript::-1::1727447886::0::1::::GroundState<>State<>::
 LandingState.gd::GDScript::-1::1727363546::0::1::::LandingState<>State<>::
-player.gd::GDScript::-1::1727364400::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1727447886::0::1::::<>CharacterBody2D<>::
 sliding.gd::GDScript::-1::1727363546::0::1::::<>Node<>::
-slidingState.gd::GDScript::-1::1727363546::0::1::::SlidingState<>State<>::
+slidingState.gd::GDScript::-1::1727365576::0::1::::SlidingState<>State<>::
 State.gd::GDScript::-1::1727363546::0::1::::State<>Node<>::
 state_machine.gd::GDScript::-1::1727363546::0::1::::<>Node<>::

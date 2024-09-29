@@ -1,7 +1,8 @@
+TileMapLayer
+Node
 Sprite2D
 TileMap
 Timer
-Node
 Label
 AnimationTree
 AnimationPlayer

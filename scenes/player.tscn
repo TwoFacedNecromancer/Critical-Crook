@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://byk22k2gt7eul"]
+[gd_scene load_steps=31 format=3 uid="uid://byk22k2gt7eul"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rpi6m"]
 [ext_resource type="Texture2D" uid="uid://bf6gvt2kdk137" path="res://assets/Weathered Knight Sprite/Weathered_Knight-Sheet.png" id="2_u4eil"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://scripts/LandingState.gd" id="6_rd3bt"]
 [ext_resource type="Script" path="res://scenes/statedebuglabel.gd" id="7_01o2n"]
 [ext_resource type="Script" path="res://scripts/slidingState.gd" id="7_qf28v"]
+[ext_resource type="Script" path="res://scripts/climbingState.gd" id="8_mgiqj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yojms"]
 size = Vector2(16, 15)
@@ -38,7 +39,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [1]
+"values": [3]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -50,7 +51,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [1]
+"values": [3]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -342,7 +343,7 @@ states/move/position = Vector2(384, 100)
 states/sliding/node = SubResource("AnimationNodeAnimation_6clab")
 states/sliding/position = Vector2(558, 11)
 transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition_2cxdy"), "move", "jump_start", SubResource("AnimationNodeStateMachineTransition_1teka"), "jump_start", "jump_end", SubResource("AnimationNodeStateMachineTransition_to6l5"), "jump_end", "move", SubResource("AnimationNodeStateMachineTransition_1pfa6"), "move", "sliding", SubResource("AnimationNodeStateMachineTransition_oisxf"), "sliding", "move", SubResource("AnimationNodeStateMachineTransition_aqk08")]
-graph_offset = Vector2(-144, -73)
+graph_offset = Vector2(11, -49)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_rpi6m")
@@ -355,6 +356,8 @@ shape = SubResource("RectangleShape2D_yojms")
 texture_filter = 1
 position = Vector2(0, -9)
 texture = ExtResource("2_u4eil")
+hframes = 3
+vframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -378,17 +381,23 @@ script = ExtResource("4_jn5ca")
 air_state = NodePath("../Air")
 sliding_state = NodePath("../Sliding")
 
-[node name="Air" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("landing_state")]
+[node name="Air" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("landing_state", "climbing_state")]
 script = ExtResource("5_wr6xj")
 landing_state = NodePath("../Landing")
+climbing_state = NodePath("../Climbing")
 
-[node name="Landing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state")]
+[node name="Landing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
 script = ExtResource("6_rd3bt")
 ground_state = NodePath("../Ground")
+air_state = NodePath("../Air")
 
 [node name="Sliding" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
 script = ExtResource("7_qf28v")
 ground_state = NodePath("../Ground")
+air_state = NodePath("../Air")
+
+[node name="Climbing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("air_state")]
+script = ExtResource("8_mgiqj")
 air_state = NodePath("../Air")
 
 [node name="statedebuglabel" type="Label" parent="." node_paths=PackedStringArray("state_machine")]

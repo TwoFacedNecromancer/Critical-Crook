@@ -20,20 +20,21 @@ func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")
 	
 	# Add the gravity.
-	if not is_on_floor():
-		if not direction.y > 0:
-			if velocity.y < 300:
-				velocity += get_gravity() * delta
-			else:
-				velocity.y = 300
-		elif direction.y > 0:
-			if velocity.y < 500:
-				velocity += get_gravity() * delta
-			else:
-				velocity.y = 500
+	if (state_machine.current_state.name == "Air"):
+		if not is_on_floor():
+			if not direction.y > 0:
+				if velocity.y < 300:
+					velocity += get_gravity() * delta
+				else:
+					velocity.y = 300
+			elif direction.y > 0:
+				if velocity.y < 500:
+					velocity += get_gravity() * delta
+				else:
+					velocity.y = 500
 	
 			
-	if direction.x != 0 and state_machine.check_if_can_move():
+	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
 		velocity.x = direction.x * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
