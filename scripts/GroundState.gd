@@ -9,6 +9,9 @@ class_name GroundState
 @export var jump_animation : String = "jump_start"
 
 func state_process(delta):
+	
+	sliding_state.timer = 4.0
+	
 	if air_state.jump_prep == true:
 		jump()
 

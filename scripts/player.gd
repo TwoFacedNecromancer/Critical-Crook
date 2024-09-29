@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 @export var speed : float = 120.0
 
-
+@export var speed_boost : float = 0.0
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animation_tree: AnimationTree = $AnimationTree
@@ -18,6 +18,11 @@ func _ready():
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")
+	
+	if speed_boost >= 0:
+		speed_boost -= 0.5
+	elif speed_boost < 0:
+		speed_boost = 0
 	
 	# Add the gravity.
 	if (state_machine.current_state.name == "Air"):
@@ -35,9 +40,10 @@ func _physics_process(delta: float) -> void:
 	
 			
 	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
-		velocity.x = direction.x * speed
+		velocity.x = direction.x * (speed + speed_boost)
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
+		speed_boost = 0
 			
 	
 	
