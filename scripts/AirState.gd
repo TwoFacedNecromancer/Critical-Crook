@@ -4,6 +4,7 @@ class_name AirState
 
 @export var landing_state : State
 @export var climbing_state : State
+@export var ground_state : State
 @export var jump_velocity : float = -300.0
 var jump_prep : bool = false
 
@@ -21,6 +22,10 @@ func state_process(delta):
 	
 	if(character.is_on_floor()):
 		climbing_state.can_climb = true
-		next_state = landing_state
+		if(Input.is_action_pressed("slide")):
+			playback.travel("move")
+			next_state = ground_state
+		else:
+			next_state = landing_state
 	if(character.is_on_wall() and Input.is_action_pressed("grab") and climbing_state.can_climb == true):
 		next_state = climbing_state

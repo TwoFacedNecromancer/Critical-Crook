@@ -40,7 +40,10 @@ func _physics_process(delta: float) -> void:
 	
 			
 	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
-		velocity.x = direction.x * (speed + speed_boost)
+		if (state_machine.current_state.name != "Ground"):
+			velocity.x = direction.x * (speed + speed_boost)
+		else:
+			velocity.x = direction.x * (speed)
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		speed_boost = 0

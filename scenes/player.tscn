@@ -321,15 +321,17 @@ script = ExtResource("4_jn5ca")
 air_state = NodePath("../Air")
 sliding_state = NodePath("../Sliding")
 
-[node name="Air" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("landing_state", "climbing_state")]
+[node name="Air" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("landing_state", "climbing_state", "ground_state")]
 script = ExtResource("5_wr6xj")
 landing_state = NodePath("../Landing")
 climbing_state = NodePath("../Climbing")
+ground_state = NodePath("../Ground")
 
-[node name="Landing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
+[node name="Landing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state", "sliding_state")]
 script = ExtResource("6_rd3bt")
 ground_state = NodePath("../Ground")
 air_state = NodePath("../Air")
+sliding_state = NodePath("../Sliding")
 
 [node name="Sliding" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
 script = ExtResource("7_qf28v")
