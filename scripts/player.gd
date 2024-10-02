@@ -67,11 +67,12 @@ func update_animation():
 	animation_tree.set("parameters/move/blend_position", direction.x)
 
 func update_facing_direction():
-	var direction = Input.get_vector("left", "right", "up", "down")
-	if direction.x < 0:
-		sprite.flip_h = true
-	elif direction.x > 0:
-		sprite.flip_h = false
+	if(!state_machine.current_state.name == "Climbing"):
+		var direction = Input.get_vector("left", "right", "up", "down")
+		if direction.x < 0:
+			sprite.flip_h = true
+		elif direction.x > 0:
+			sprite.flip_h = false
 		
 	
 

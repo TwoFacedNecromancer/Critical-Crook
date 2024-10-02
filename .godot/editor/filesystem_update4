@@ -1,4 +1,3 @@
-res://scenes/player.tscn
 res://scenes/level.tscn
-res://scripts/LandingState.gd
 res://scripts/AirState.gd
+res://scenes/player.tscn
