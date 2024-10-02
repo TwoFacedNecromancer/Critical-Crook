@@ -9,8 +9,13 @@ class_name AirState
 var jump_prep : bool = false
 
 var timer : float = 1.0
+var timer2 : float = 1.0
 
 func state_process(delta):
+	
+	if (Input.is_action_pressed("jump")):
+		character.velocity.y -= 5
+	
 	if Input.is_action_just_pressed("jump") and timer >= 0:
 		jump_prep = true
 	

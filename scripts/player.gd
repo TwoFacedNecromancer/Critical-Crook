@@ -11,12 +11,12 @@ extends CharacterBody2D
 @onready var state_machine: CharacterStateMachine = $CharacterStateMachine
 
 
-
 func _ready():
 	animation_tree.active = true
 
 
 func _physics_process(delta: float) -> void:
+	
 	var direction = Input.get_vector("left", "right", "up", "down")
 	
 	if speed_boost >= 0:
@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	if (state_machine.current_state.name == "Air"):
 		if not is_on_floor():
 			if not direction.y > 0:
-				if velocity.y < 300:
+				if velocity.y < (300):
 					velocity += get_gravity() * delta
 				else:
 					velocity.y = 300

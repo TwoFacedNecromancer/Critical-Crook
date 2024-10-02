@@ -14,6 +14,9 @@ func state_process(delta):
 	
 	if(character.is_on_floor()):
 		
+		if air_state.jump_prep == true:
+			jump()
+		
 		if(timer <= 0 ):
 			timer = 1
 			if (Input.is_action_pressed("slide")):
@@ -28,3 +31,9 @@ func state_process(delta):
 					
 		else:
 			timer -= 0.1
+			
+
+func jump():
+	character.velocity.y = jump_velocity
+	next_state = air_state
+	playback.travel("jump_start")
