@@ -34,3 +34,4 @@ func state_process(delta):
 			next_state = landing_state
 	if(character.is_on_wall() and Input.is_action_pressed("grab") and climbing_state.can_climb == true):
 		next_state = climbing_state
+		playback.travel("climbing")
