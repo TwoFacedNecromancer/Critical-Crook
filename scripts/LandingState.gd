@@ -18,6 +18,7 @@ func state_process(delta):
 			timer = 1
 			if (Input.is_action_pressed("slide")):
 				next_state = sliding_state
+				playback.travel("sliding")
 			else:
 				playback.travel("jump_end")
 				if air_state.jump_prep == true or Input.is_action_just_pressed("jump"):

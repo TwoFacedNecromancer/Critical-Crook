@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://byk22k2gt7eul"]
+[gd_scene load_steps=34 format=3 uid="uid://byk22k2gt7eul"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rpi6m"]
 [ext_resource type="Script" path="res://scripts/character_state_machine.gd" id="3_7rmoj"]
@@ -39,7 +39,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [10]
+"values": [12]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -81,7 +81,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [10]
+"values": [12]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -122,7 +122,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [10]
+"values": [12]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -164,7 +164,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [10]
+"values": [12]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -206,7 +206,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [10]
+"values": [12]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -221,14 +221,101 @@ tracks/2/keys = {
 "values": [4, 5, 6, 7]
 }
 
+[sub_resource type="Animation" id="Animation_vc62c"]
+resource_name = "sliding"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_fdmox")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_hvkpy"]
+resource_name = "climbing"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_fdmox")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [11]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fo5x4"]
 _data = {
 "RESET": SubResource("Animation_4whp5"),
+"climbing": SubResource("Animation_hvkpy"),
 "idle": SubResource("Animation_grp02"),
 "jump_end": SubResource("Animation_qibxd"),
 "jump_start": SubResource("Animation_bvqpu"),
-"run": SubResource("Animation_q3gh5")
+"run": SubResource("Animation_q3gh5"),
+"sliding": SubResource("Animation_vc62c")
 }
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iqxfd"]
+animation = &"climbing"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mon5d"]
 animation = &"jump_end"
@@ -274,6 +361,8 @@ advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_sw4qy"]
 states/Start/position = Vector2(224, 100)
+states/climbing/node = SubResource("AnimationNodeAnimation_iqxfd")
+states/climbing/position = Vector2(384, -69)
 states/jump_end/node = SubResource("AnimationNodeAnimation_mon5d")
 states/jump_end/position = Vector2(558, 100)
 states/jump_start/node = SubResource("AnimationNodeAnimation_2gt37")
@@ -283,7 +372,7 @@ states/move/position = Vector2(384, 100)
 states/sliding/node = SubResource("AnimationNodeAnimation_6clab")
 states/sliding/position = Vector2(558, 11)
 transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition_2cxdy"), "move", "jump_start", SubResource("AnimationNodeStateMachineTransition_1teka"), "jump_start", "jump_end", SubResource("AnimationNodeStateMachineTransition_to6l5"), "jump_end", "move", SubResource("AnimationNodeStateMachineTransition_1pfa6"), "move", "sliding", SubResource("AnimationNodeStateMachineTransition_oisxf"), "sliding", "move", SubResource("AnimationNodeStateMachineTransition_aqk08")]
-graph_offset = Vector2(11, -49)
+graph_offset = Vector2(-228, -64)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_rpi6m")
@@ -296,7 +385,7 @@ shape = SubResource("RectangleShape2D_yojms")
 texture_filter = 1
 position = Vector2(0, -9)
 texture = ExtResource("3_fdmox")
-hframes = 10
+hframes = 12
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
