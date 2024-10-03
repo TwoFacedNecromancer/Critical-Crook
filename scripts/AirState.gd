@@ -9,7 +9,8 @@ class_name AirState
 var jump_prep : bool = false
 
 var timer : float = 2.0
-var timer2 : float = 1.0
+
+var grav_mod : float = 10.0
 
 func state_process(delta):
 	

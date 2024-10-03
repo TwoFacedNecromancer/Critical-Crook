@@ -10,12 +10,23 @@ extends CharacterBody2D
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var state_machine: CharacterStateMachine = $CharacterStateMachine
 
+var new_grav = get_gravity()
+var grav_mod : float
 
 func _ready():
 	animation_tree.active = true
 
 
 func _physics_process(delta: float) -> void:
+	
+	if(Input.is_action_pressed("jump")):
+		new_grav.y = get_gravity().y - 200
+		grav_mod = 200
+		pass
+	else:
+		new_grav.y = get_gravity().y + 300
+		grav_mod =  0
+		pass
 	
 	var direction = Input.get_vector("left", "right", "up", "down")
 	
@@ -28,15 +39,17 @@ func _physics_process(delta: float) -> void:
 	if (state_machine.current_state.name == "Air"):
 		if not is_on_floor():
 			if not direction.y > 0:
-				if velocity.y < (300):
-					velocity += get_gravity() * delta
+				if velocity.y < (300 - grav_mod):
+					velocity += new_grav * delta
+					
 				else:
-					velocity.y = 300
+					velocity.y = (300 - grav_mod)
 			elif direction.y > 0:
-				if velocity.y < 500:
-					velocity += get_gravity() * delta
+				if velocity.y < (500 - grav_mod):
+					velocity += new_grav * delta
+					
 				else:
-					velocity.y = 500
+					velocity.y = (500 - grav_mod)
 	
 			
 	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
