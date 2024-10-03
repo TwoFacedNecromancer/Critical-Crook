@@ -4,7 +4,7 @@ class_name SlidingState
 
 @export var ground_state : State
 @export var air_state : State
-@export var jump_velocity : float = -300.0
+@export var jump_velocity : float = -200.0
 
 var timer : float = 4.0
 

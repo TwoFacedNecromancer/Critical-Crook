@@ -10,8 +10,7 @@ extends CharacterBody2D
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var state_machine: CharacterStateMachine = $CharacterStateMachine
 
-var new_grav = get_gravity()
-var grav_mod : float
+var timer : float = 1.6
 
 func _ready():
 	animation_tree.active = true
@@ -19,14 +18,10 @@ func _ready():
 
 func _physics_process(delta: float) -> void:
 	
-	if(Input.is_action_pressed("jump")):
-		new_grav.y = get_gravity().y - 200
-		grav_mod = 200
-		pass
-	else:
-		new_grav.y = get_gravity().y + 300
-		grav_mod =  0
-		pass
+	if(state_machine.current_state.name == "Air" and timer >= 0):
+		timer -= 0.2
+	elif(not state_machine.current_state.name == "Air"):
+		timer = 2.0
 	
 	var direction = Input.get_vector("left", "right", "up", "down")
 	
@@ -36,21 +31,21 @@ func _physics_process(delta: float) -> void:
 		speed_boost = 0
 	
 	# Add the gravity.
-	if (state_machine.current_state.name == "Air"):
+	if (not state_machine.current_state.name == "Climbing"):
 		if not is_on_floor():
 			if not direction.y > 0:
-				if velocity.y < (300 - grav_mod):
-					velocity += new_grav * delta
-					
+				if velocity.y < 300:
+					velocity += get_gravity() * delta
 				else:
-					velocity.y = (300 - grav_mod)
+					velocity.y = (300)
 			elif direction.y > 0:
-				if velocity.y < (500 - grav_mod):
-					velocity += new_grav * delta
-					
+				if velocity.y < (500):
+					velocity += get_gravity() * delta
 				else:
-					velocity.y = (500 - grav_mod)
-	
+					velocity.y = (500)
+					
+		if Input.is_action_pressed("jump") and !is_on_floor() and timer > 0:
+			velocity.y = velocity.y-20
 			
 	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
 		if (state_machine.current_state.name != "Ground"):

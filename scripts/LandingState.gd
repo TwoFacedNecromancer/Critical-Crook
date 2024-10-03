@@ -6,7 +6,7 @@ class_name LandingState
 @export var air_state : State
 @export var sliding_state : State
 
-@export var jump_velocity : float = -300.0
+@export var jump_velocity : float = -200.0
 
 var timer : float = 1.0
 

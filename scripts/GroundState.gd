@@ -3,7 +3,7 @@ extends State
 class_name GroundState
 
 
-@export var jump_velocity : float = -300.0
+@export var jump_velocity : float = -200.0
 @export var air_state : State
 @export var sliding_state : State
 @export var jump_animation : String = "jump_start"
