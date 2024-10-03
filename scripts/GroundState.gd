@@ -11,7 +11,6 @@ class_name GroundState
 func state_process(delta):
 	
 	sliding_state.timer = 4.0
-	
 
 func state_input(event : InputEvent):
 	if(event.is_action_pressed("jump")):

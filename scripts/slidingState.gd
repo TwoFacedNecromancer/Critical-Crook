@@ -15,6 +15,7 @@ func state_process(delta):
 	if((character.is_on_floor() and !Input.is_action_pressed("slide")) or timer <= 0):
 		playback.travel("move")
 		next_state = ground_state
+		get_parent().get_parent().speed_boost = 0
 	if(character.is_on_floor() and Input.is_action_pressed("jump")):
 		character.speed_boost += 100.0
 		jump()

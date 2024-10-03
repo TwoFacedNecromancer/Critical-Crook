@@ -13,6 +13,7 @@ func state_process(delta):
 	
 	if(not Input.is_action_pressed("grab") or not character.is_on_wall()):
 		next_state = air_state
+		playback.travel("jump_start")
 
 func state_input(event : InputEvent):
 	if(event.is_action_pressed("jump")):

@@ -25,6 +25,7 @@ func state_process(delta):
 				timer = 1
 				playback.travel("move")
 				next_state = ground_state
+				get_parent().get_parent().speed_boost = 0
 			else:
 				timer -= 0.1
 		
