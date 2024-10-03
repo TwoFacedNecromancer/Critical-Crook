@@ -12,8 +12,6 @@ func state_process(delta):
 	
 	sliding_state.timer = 4.0
 	
-	if air_state.jump_prep == true:
-		jump()
 
 func state_input(event : InputEvent):
 	if(event.is_action_pressed("jump")):

@@ -20,6 +20,7 @@ func state_process(delta):
 		jump()
 
 func jump():
+	timer = 4.0
 	character.velocity.y = jump_velocity
 	next_state = air_state
 	playback.travel("jump_start")

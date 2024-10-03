@@ -11,12 +11,12 @@ extends CharacterBody2D
 @onready var state_machine: CharacterStateMachine = $CharacterStateMachine
 
 
-
 func _ready():
 	animation_tree.active = true
 
 
 func _physics_process(delta: float) -> void:
+	
 	var direction = Input.get_vector("left", "right", "up", "down")
 	
 	if speed_boost >= 0:
@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	if (state_machine.current_state.name == "Air"):
 		if not is_on_floor():
 			if not direction.y > 0:
-				if velocity.y < 300:
+				if velocity.y < (300):
 					velocity += get_gravity() * delta
 				else:
 					velocity.y = 300
@@ -40,7 +40,10 @@ func _physics_process(delta: float) -> void:
 	
 			
 	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
-		velocity.x = direction.x * (speed + speed_boost)
+		if (state_machine.current_state.name != "Ground"):
+			velocity.x = direction.x * (speed + speed_boost)
+		else:
+			velocity.x = direction.x * (speed)
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		speed_boost = 0
@@ -64,11 +67,12 @@ func update_animation():
 	animation_tree.set("parameters/move/blend_position", direction.x)
 
 func update_facing_direction():
-	var direction = Input.get_vector("left", "right", "up", "down")
-	if direction.x < 0:
-		sprite.flip_h = true
-	elif direction.x > 0:
-		sprite.flip_h = false
+	if(!state_machine.current_state.name == "Climbing"):
+		var direction = Input.get_vector("left", "right", "up", "down")
+		if direction.x < 0:
+			sprite.flip_h = true
+		elif direction.x > 0:
+			sprite.flip_h = false
 		
 	
 
