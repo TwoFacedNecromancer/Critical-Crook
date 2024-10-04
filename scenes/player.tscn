@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://byk22k2gt7eul"]
+[gd_scene load_steps=37 format=3 uid="uid://byk22k2gt7eul"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rpi6m"]
 [ext_resource type="Script" path="res://scripts/character_state_machine.gd" id="3_7rmoj"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scenes/statedebuglabel.gd" id="7_01o2n"]
 [ext_resource type="Script" path="res://scripts/slidingState.gd" id="7_qf28v"]
 [ext_resource type="Script" path="res://scripts/climbingState.gd" id="8_mgiqj"]
+[ext_resource type="Script" path="res://scripts/statedebuglabel_2.gd" id="10_hok0x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yojms"]
 size = Vector2(20, 32)
@@ -443,3 +444,11 @@ offset_bottom = -38.0
 text = "State:"
 script = ExtResource("7_01o2n")
 state_machine = NodePath("../CharacterStateMachine")
+
+[node name="statedebuglabel2" type="Label" parent="."]
+offset_left = -51.0
+offset_top = -79.0
+offset_right = 55.0
+offset_bottom = -56.0
+text = "State:"
+script = ExtResource("10_hok0x")

@@ -8,16 +8,18 @@ class_name LandingState
 
 @export var jump_velocity : float = -200.0
 
-var timer : float = 1.0
+var timer : float = 0.4
 
 func state_process(delta):
 	
 	if(character.is_on_floor()):
 		
 		if air_state.jump_prep == true or Input.is_action_just_pressed("jump"):
+			timer = 1
 			jump()
 		else:
 			if(Input.is_action_just_pressed("slide")):
+				timer = 1
 				next_state = sliding_state
 				playback.travel("sliding")
 		

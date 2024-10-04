@@ -10,7 +10,14 @@ class_name GroundState
 
 func state_process(delta):
 	
+
 	sliding_state.timer = 4.0
+	if(character.is_on_floor()):
+		pass
+	else:
+		print("test")
+		playback.travel("jump_start")
+		next_state = air_state
 
 func state_input(event : InputEvent):
 	if(event.is_action_pressed("jump")):

@@ -1,7 +1,3 @@
 res://scenes/level.tscn
-res://scripts/player.gd
 res://scenes/player.tscn
 res://scripts/GroundState.gd
-res://scripts/climbingState.gd
-res://scripts/slidingState.gd
-res://scripts/LandingState.gd
