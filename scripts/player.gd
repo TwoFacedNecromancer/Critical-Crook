@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-#test comment
+#test comment hello
 
 @export var speed : float = 120.0
 
