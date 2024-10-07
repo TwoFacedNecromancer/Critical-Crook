@@ -15,7 +15,6 @@ func state_process(delta):
 	if(character.is_on_floor()):
 		pass
 	else:
-		print("test")
 		playback.travel("jump_start")
 		next_state = air_state
 
@@ -24,7 +23,8 @@ func state_input(event : InputEvent):
 		jump()
 	
 	if(event.is_action_pressed("slide")):
-		slide()
+		if(character.velocity.x != 0):
+			slide()
 
 func jump():
 	character.velocity.y = jump_velocity

@@ -16,8 +16,13 @@ func state_process(delta):
 		playback.travel("move")
 		next_state = ground_state
 		get_parent().get_parent().speed_boost = 0
+		
+	if(not character.is_on_floor()):
+		playback.travel("jump_start")
+		next_state = air_state
+		
 	if(character.is_on_floor() and Input.is_action_pressed("jump")):
-		character.speed_boost += 100.0
+		character.speed_boost += 50.0
 		jump()
 
 func jump():

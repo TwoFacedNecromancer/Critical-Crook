@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://scripts/statedebuglabel_2.gd" id="10_hok0x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yojms"]
-size = Vector2(20, 32)
+size = Vector2(20, 29)
 
 [sub_resource type="Animation" id="Animation_4whp5"]
 length = 0.001
@@ -383,7 +383,7 @@ graph_offset = Vector2(-230, -120)
 script = ExtResource("1_rpi6m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -9)
+position = Vector2(0, -7.5)
 shape = SubResource("RectangleShape2D_yojms")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
