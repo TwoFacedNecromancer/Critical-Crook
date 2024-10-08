@@ -1,1 +1,7 @@
 res://scenes/player.tscn
+res://scenes/level.tscn
+res://scripts/GroundState.gd
+res://scripts/statedebuglabel_2.gd
+res://scripts/player.gd
+res://scripts/slidingState.gd
+res://scripts/LandingState.gd

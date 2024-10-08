@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://byk22k2gt7eul"]
+[gd_scene load_steps=38 format=3 uid="uid://byk22k2gt7eul"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rpi6m"]
 [ext_resource type="Script" path="res://scripts/character_state_machine.gd" id="3_7rmoj"]
@@ -13,6 +13,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yojms"]
 size = Vector2(20, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dm0w7"]
+size = Vector2(20, 15)
 
 [sub_resource type="Animation" id="Animation_4whp5"]
 length = 0.001
@@ -382,9 +385,14 @@ graph_offset = Vector2(-230, -120)
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_rpi6m")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7.5)
 shape = SubResource("RectangleShape2D_yojms")
+
+[node name="slidebox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_dm0w7")
+disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

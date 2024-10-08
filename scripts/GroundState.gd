@@ -8,6 +8,10 @@ class_name GroundState
 @export var sliding_state : State
 @export var jump_animation : String = "jump_start"
 
+@onready var slidebox = get_parent().get_parent().find_child("slidebox")
+@onready var hitbox = get_parent().get_parent().find_child("hitbox")
+
+
 func state_process(delta):
 	
 
@@ -33,5 +37,7 @@ func jump():
 	
 
 func slide():
+	slidebox.disabled = false
+	hitbox.disabled = true
 	next_state = sliding_state
 	playback.travel("sliding")

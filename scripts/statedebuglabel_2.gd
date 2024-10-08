@@ -9,4 +9,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = "Landing timer " + str(get_parent().get_child(4).get_child(2).timer)
+	text = "Landing timer " + str(get_parent().get_child(5).get_child(3).timer)
