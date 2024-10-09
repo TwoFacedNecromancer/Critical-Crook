@@ -9,4 +9,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = "Landing timer " + str(get_parent().get_child(5).get_child(3).timer)
+	text = "overlap: " + str(get_parent().find_child("CharacterStateMachine").find_child("Sliding").overlap)

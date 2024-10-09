@@ -1,2 +1,4 @@
+res://scenes/level.tscn
 res://scenes/player.tscn
-res://scripts/player.gd
+res://scripts/slidingState.gd
+res://scripts/statedebuglabel_2.gd
