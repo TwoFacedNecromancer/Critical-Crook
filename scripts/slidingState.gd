@@ -14,7 +14,6 @@ var timer : float = 4.0
 
 var overlap : bool
 
-
 func state_process(delta):
 	
 	timer -= 0.1
@@ -45,9 +44,6 @@ func jump():
 	character.velocity.y = jump_velocity
 	next_state = air_state
 	playback.travel("jump_start")
-
-
-
 
 
 func _on_detector_body_entered(body: Node2D) -> void:

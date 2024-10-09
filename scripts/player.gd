@@ -12,6 +12,8 @@ extends CharacterBody2D
 
 var timer : float = 1.6
 
+var direction = Input.get_vector("left", "right", "up", "down")
+
 func _ready():
 	animation_tree.active = true
 
@@ -22,8 +24,8 @@ func _physics_process(delta: float) -> void:
 		timer -= 0.2
 	elif(not state_machine.current_state.name == "Air"):
 		timer = 2.0
-	
-	var direction = Input.get_vector("left", "right", "up", "down")
+	if(state_machine.current_state.name != "Sliding"):
+		direction = Input.get_vector("left", "right", "up", "down")
 	
 	if speed_boost >= 0:
 		speed_boost -= 0.5
@@ -53,10 +55,11 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = direction.x * (speed)
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-		speed_boost = 0
-			
-	
+		if(state_machine.current_state.name != "Sliding"):
+			velocity.x = move_toward(velocity.x, 0, speed)
+			speed_boost = 0
+			pass
+		
 	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -75,7 +78,7 @@ func update_animation():
 	animation_tree.set("parameters/move/blend_position", direction.x)
 
 func update_facing_direction():
-	if(!state_machine.current_state.name == "Climbing"):
+	if(state_machine.current_state.name != "Climbing" and state_machine.current_state.name != "Sliding"):
 		var direction = Input.get_vector("left", "right", "up", "down")
 		if direction.x < 0:
 			sprite.flip_h = true
