@@ -1,3 +1,4 @@
 res://scenes/level.tscn
 res://scenes/player.tscn
-res://scripts/player.gd
+res://scenes/killbox.tscn
+res://scripts/death.gd

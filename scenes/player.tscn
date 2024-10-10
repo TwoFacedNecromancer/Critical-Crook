@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://byk22k2gt7eul"]
+[gd_scene load_steps=40 format=3 uid="uid://byk22k2gt7eul"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rpi6m"]
 [ext_resource type="Script" path="res://scripts/character_state_machine.gd" id="3_7rmoj"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scenes/statedebuglabel.gd" id="7_01o2n"]
 [ext_resource type="Script" path="res://scripts/slidingState.gd" id="7_qf28v"]
 [ext_resource type="Script" path="res://scripts/climbingState.gd" id="8_mgiqj"]
+[ext_resource type="Script" path="res://scripts/death.gd" id="9_ocmt1"]
 [ext_resource type="Script" path="res://scripts/statedebuglabel_2.gd" id="10_hok0x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yojms"]
@@ -386,6 +387,7 @@ transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(-230, -120)
 
 [node name="player" type="CharacterBody2D"]
+collision_mask = 3
 script = ExtResource("1_rpi6m")
 
 [node name="hitbox" type="CollisionShape2D" parent="."]
@@ -453,6 +455,9 @@ air_state = NodePath("../Air")
 script = ExtResource("8_mgiqj")
 air_state = NodePath("../Air")
 
+[node name="Death" type="Node" parent="CharacterStateMachine"]
+script = ExtResource("9_ocmt1")
+
 [node name="statedebuglabel" type="Label" parent="." node_paths=PackedStringArray("state_machine")]
 offset_left = -51.0
 offset_top = -61.0
@@ -469,6 +474,10 @@ offset_right = 55.0
 offset_bottom = -56.0
 text = "State:"
 script = ExtResource("10_hok0x")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+process_callback = 0
 
 [connection signal="body_entered" from="detector" to="CharacterStateMachine/Sliding" method="_on_detector_body_entered"]
 [connection signal="body_exited" from="detector" to="CharacterStateMachine/Sliding" method="_on_detector_body_exited"]
