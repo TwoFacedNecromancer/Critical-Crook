@@ -1,6 +1,3 @@
-res://scripts/killbox.gd
-res://scenes/killbox.tscn
 res://scenes/level.tscn
 res://scenes/player.tscn
-res://scripts/death.gd
-res://scripts/bus.gd
+res://scripts/player.gd
