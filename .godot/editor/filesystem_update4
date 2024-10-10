@@ -1,4 +1,6 @@
+res://scripts/killbox.gd
+res://scenes/killbox.tscn
 res://scenes/level.tscn
 res://scenes/player.tscn
-res://scripts/slidingState.gd
-res://scripts/statedebuglabel_2.gd
+res://scripts/death.gd
+res://scripts/bus.gd

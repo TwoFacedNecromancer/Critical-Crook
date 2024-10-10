@@ -1,10 +1,10 @@
-Area2D
-CollisionShape2D
-TileMapLayer
+Timer
 Node
+CollisionShape2D
+Area2D
+TileMapLayer
 Sprite2D
 TileMap
-Timer
 Label
 AnimationTree
 AnimationPlayer
