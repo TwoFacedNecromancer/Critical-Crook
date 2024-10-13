@@ -478,6 +478,7 @@ script = ExtResource("10_hok0x")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
 process_callback = 0
+limit_bottom = 81
 
 [connection signal="body_entered" from="detector" to="CharacterStateMachine/Sliding" method="_on_detector_body_entered"]
 [connection signal="body_exited" from="detector" to="CharacterStateMachine/Sliding" method="_on_detector_body_exited"]

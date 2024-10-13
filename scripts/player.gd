@@ -86,5 +86,3 @@ func update_facing_direction():
 			sprite.flip_h = false
 		
 	
-
-	
