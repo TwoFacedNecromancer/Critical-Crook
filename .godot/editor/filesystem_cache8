@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728831493
+::res://::1728871839
 icon.svg::CompressedTexture2D::5814638739882052501::1727221035::1728532475::1::::<><>::
 ::res://addons/::1727221035
 ::res://addons/godot-git-plugin/::1727221035
@@ -8,7 +8,7 @@ plugin.cfg::TextFile::-1::1727221035::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1727221035::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1727221035
 ::res://addons/godot-git-plugin/macos/::1727221035
-::res://addons/godot-git-plugin/win64/::1728831487
+::res://addons/godot-git-plugin/win64/::1728871834
 ::res://assets/::1728673930
 Keyboard Extras.png::CompressedTexture2D::9120505288231299620::1727221035::1728532475::1::::<><>::
 Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1727221035::1728532475::1::::<><>::
@@ -16,24 +16,23 @@ Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1727
 Divergent_Knight-Sheet.png::CompressedTexture2D::9190456491650407920::1727911291::1728532475::1::::<><>::
 ::res://assets/Tileset Sprites/::1728532475
 Stone_Tile-Sheet.png::CompressedTexture2D::815640335334331637::1727299839::1728532475::1::::<><>::
-::res://scenes/::1728792018
-killbox.tscn::PackedScene::2969804116306660742::1728792018::0::1::::<><>::res://scripts/killbox.gd
-level.tscn::PackedScene::5990108406888525160::1728792018::0::1::::<><>::uid://lvdqhufj5rej::::res://assets/Tileset Sprites/Stone_Tile-Sheet.png<>res://scripts/bus.gd<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn
-player.tscn::PackedScene::4093284851029089395::1728792018::0::1::::<><>::res://scripts/player.gd<>res://scripts/character_state_machine.gd<>uid://d366qf46uuojg::::res://assets/Knight PlayerCharacter Sprite/Divergent_Knight-Sheet.png<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
+::res://scenes/::1728838907
+killbox.tscn::PackedScene::2969804116306660742::1728838875::0::1::::<><>::res://scripts/killbox.gd
+level.tscn::PackedScene::5990108406888525160::1728838875::0::1::::<><>::uid://lvdqhufj5rej::::res://assets/Tileset Sprites/Stone_Tile-Sheet.png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://co3wirukhwg2h::::res://icon.svg
+player.tscn::PackedScene::4093284851029089395::1728838907::0::1::::<><>::res://scripts/player.gd<>res://scripts/character_state_machine.gd<>uid://d366qf46uuojg::::res://assets/Knight PlayerCharacter Sprite/Divergent_Knight-Sheet.png<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
 statedebuglabel.gd::GDScript::-1::1728342372::0::1::::<>Label<>::
-::res://scripts/::1728791949
+::res://scripts/::1728838889
 AirState.gd::GDScript::-1::1727996891::0::1::::AirState<>State<>::
-bus.gd::GDScript::-1::1728517873::0::1::::<>Node2D<>::
 character_state_machine.gd::GDScript::-1::1727221035::0::1::::CharacterStateMachine<>Node<>::
 climbing.gd::GDScript::-1::1727726983::0::1::::<>Node<>::
 climbingState.gd::GDScript::-1::1727996891::0::1::::ClimbingState<>State<>::
-death.gd::GDScript::-1::1728791281::0::1::::DeathState<>State<>::
+death.gd::GDScript::-1::1728836221::0::1::::DeathState<>State<>::
 GroundState.gd::GDScript::-1::1728512252::0::1::::GroundState<>State<>::
-killbox.gd::GDScript::-1::1728791949::0::1::::<>Area2D<>::
+killbox.gd::GDScript::-1::1728838889::0::1::::<>Area2D<>::
 LandingState.gd::GDScript::-1::1728512252::0::1::::LandingState<>State<>::
 player.gd::GDScript::-1::1728789302::0::1::::<>CharacterBody2D<>::
 sliding.gd::GDScript::-1::1727297923::0::1::::<>Node<>::
 slidingState.gd::GDScript::-1::1728531612::0::1::::SlidingState<>State<>::
 State.gd::GDScript::-1::1727221035::0::1::::State<>Node<>::
-statedebuglabel_2.gd::GDScript::-1::1728512252::0::1::::<>Label<>::
+statedebuglabel_2.gd::GDScript::-1::1728838870::0::1::::<>Label<>::
 state_machine.gd::GDScript::-1::1727221035::0::1::::<>Node<>::

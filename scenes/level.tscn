@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://crlwhfdpwu7u7"]
+[gd_scene load_steps=9 format=3 uid="uid://crlwhfdpwu7u7"]
 
 [ext_resource type="Texture2D" uid="uid://lvdqhufj5rej" path="res://assets/Tileset Sprites/Stone_Tile-Sheet.png" id="1_eyorx"]
-[ext_resource type="Script" path="res://scripts/bus.gd" id="1_t16hm"]
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_lvtta"]
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="3_cld70"]
+[ext_resource type="Texture2D" uid="uid://co3wirukhwg2h" path="res://icon.svg" id="5_atrmt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h7uu5"]
 texture = ExtResource("1_eyorx")
@@ -31,8 +31,9 @@ sources/0 = SubResource("TileSetAtlasSource_h7uu5")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaipx"]
 size = Vector2(64, 20)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_e7r60"]
+
 [node name="level" type="Node2D"]
-script = ExtResource("1_t16hm")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_3bc6q")
@@ -47,3 +48,13 @@ position = Vector2(560, 31)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
 shape = SubResource("RectangleShape2D_uaipx")
+
+[node name="Killbox2" parent="." instance=ExtResource("3_cld70")]
+position = Vector2(95, -27)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox2"]
+shape = SubResource("CircleShape2D_e7r60")
+
+[node name="Sprite2D" type="Sprite2D" parent="Killbox2"]
+scale = Vector2(0.148438, 0.148438)
+texture = ExtResource("5_atrmt")
