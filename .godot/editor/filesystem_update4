@@ -1,4 +1,10 @@
 res://scenes/level.tscn
+res://scripts/climbingState.gd
 res://scenes/player.tscn
 res://scenes/killbox.tscn
 res://scripts/death.gd
+res://scripts/killbox.gd
+res://scripts/LandingState.gd
+res://scripts/slidingState.gd
+res://scenes/statedebuglabel.gd
+res://scripts/statedebuglabel_2.gd

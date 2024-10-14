@@ -1,5 +1,7 @@
 extends Label
 
+#debug lable nothing crazy
+
 @export var state_machine : CharacterStateMachine
 
 # Called when the node enters the scene tree for the first time.
