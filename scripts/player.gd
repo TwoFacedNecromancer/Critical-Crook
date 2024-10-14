@@ -17,8 +17,11 @@ var direction = Input.get_vector("left", "right", "up", "down")
 func _ready():
 	animation_tree.active = true
 
+var isdead = false
 
 func _physics_process(delta: float) -> void:
+	if isdead == true:
+		return
 	
 	if(state_machine.current_state.name == "Air" and timer >= 0):
 		timer -= 0.2
