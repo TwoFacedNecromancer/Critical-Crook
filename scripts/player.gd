@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	if(state_machine.current_state.name == "Air" and timer >= 0):
-		timer -= 0.2
+		timer -= 0.2 * delta
 	elif(not state_machine.current_state.name == "Air"):
 		timer = 2.0
 	if(state_machine.current_state.name != "Sliding"):
@@ -50,7 +50,7 @@ func _physics_process(delta: float) -> void:
 					velocity.y = (500)
 					
 		if Input.is_action_pressed("jump") and !is_on_floor() and timer > 0:
-			velocity.y = velocity.y-20
+			velocity.y = velocity.y-350 * delta
 			
 	if direction.x != 0 and state_machine.check_if_can_move() and state_machine.current_state.name != "Climbing":
 		if (state_machine.current_state.name != "Ground"):
@@ -64,13 +64,6 @@ func _physics_process(delta: float) -> void:
 			pass
 		
 	
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		#jump
-		pass
-		
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 
 	move_and_slide()
 	update_animation()

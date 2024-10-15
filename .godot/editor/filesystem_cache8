@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728948781
+::res://::1728957561
 icon.svg::CompressedTexture2D::5814638739882052501::1727221035::1728948784::1::::<><>::
 ::res://addons/::1727221035
 ::res://addons/godot-git-plugin/::1727221035
@@ -8,23 +8,22 @@ plugin.cfg::TextFile::-1::1727221035::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1727221035::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1727221035
 ::res://addons/godot-git-plugin/macos/::1727221035
-::res://addons/godot-git-plugin/win64/::1728948772
-::res://assets/::1728948758
+::res://addons/godot-git-plugin/win64/::1728954192
+::res://assets/::1728957561
 Keyboard Extras.png::CompressedTexture2D::9120505288231299620::1727221035::1728948784::1::::<><>::
 Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1727221035::1728948784::1::::<><>::
-medievalgamejamtileset (1).png::CompressedTexture2D::1039575442453993444::1728948758::1728948784::1::::<><>::
-skullbat-Sheet.png::CompressedTexture2D::6545887065200095048::1728948758::1728948784::1::::<><>::
-ThiefMainCharacter (1)-Sheet.png::CompressedTexture2D::3154136492750495197::1728948758::1728948784::1::::<><>::
-::res://assets/Knight PlayerCharacter Sprite/::1728532475
-Divergent_Knight-Sheet.png::CompressedTexture2D::9190456491650407920::1727911291::1728948784::1::::<><>::
-::res://assets/Tileset Sprites/::1728532475
-Stone_Tile-Sheet.png::CompressedTexture2D::815640335334331637::1727299839::1728948784::1::::<><>::
-::res://scenes/::1728948325
-killbox.tscn::PackedScene::2969804116306660742::1728948021::0::1::::<><>::res://scripts/killbox.gd
-level.tscn::PackedScene::5990108406888525160::1728948021::0::1::::<><>::uid://lvdqhufj5rej::::res://assets/Tileset Sprites/Stone_Tile-Sheet.png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://co3wirukhwg2h::::res://icon.svg
-main_menu.tscn::PackedScene::2198407506177316443::1728948292::0::1::::<><>::res://scripts/main_menu.gd
-options_menu.tscn::PackedScene::7165244350448618947::1728948021::0::1::::<><>::res://scripts/options_menu.gd
-player.tscn::PackedScene::4093284851029089395::1728948088::0::1::::<><>::res://scripts/player.gd<>res://scripts/character_state_machine.gd<>uid://d366qf46uuojg::::res://assets/Knight PlayerCharacter Sprite/Divergent_Knight-Sheet.png<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
+::res://assets/Enemy Sprites/::1728957561
+skullbat-Sheet.png::CompressedTexture2D::6545887065200095048::1728948758::1728957561::1::::<><>::
+::res://assets/Player Character/::1728957535
+ThiefMainCharacter-Sheet.png::CompressedTexture2D::5812255420716414503::1728954947::1728957535::1::::<><>::
+::res://assets/Tileset Sprites/::1728957512
+medievalgamejamtileset (1).png::CompressedTexture2D::1039575442453993444::1728948758::1728954890::1::::<><>::
+::res://scenes/::1728957535
+killbox.tscn::PackedScene::2969804116306660742::1728957444::0::1::::<><>::res://scripts/killbox.gd
+level.tscn::PackedScene::5990108406888525160::1728957488::0::1::::<><>::uid://o2twj62fxv4o::::res://assets/Tileset Sprites/medievalgamejamtileset (1).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://co3wirukhwg2h::::res://icon.svg
+main_menu.tscn::PackedScene::2198407506177316443::1728957444::0::1::::<><>::res://scripts/main_menu.gd
+options_menu.tscn::PackedScene::7165244350448618947::1728957444::0::1::::<><>::res://scripts/options_menu.gd
+player.tscn::PackedScene::4093284851029089395::1728957535::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
 statedebuglabel.gd::GDScript::-1::1728948325::0::1::::<>Label<>::
 ::res://scripts/::1728948360
 AirState.gd::GDScript::-1::1728948325::0::1::::AirState<>State<>::

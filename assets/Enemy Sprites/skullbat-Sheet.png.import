@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d366qf46uuojg"
-path="res://.godot/imported/Divergent_Knight-Sheet.png-2f61a83f19fe4ba99cd9bd259477a691.ctex"
+uid="uid://c0i42k7uvxxsa"
+path="res://.godot/imported/skullbat-Sheet.png-8dd13fc1ac62fdb1b2cbb91223fb2518.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Knight PlayerCharacter Sprite/Divergent_Knight-Sheet.png"
-dest_files=["res://.godot/imported/Divergent_Knight-Sheet.png-2f61a83f19fe4ba99cd9bd259477a691.ctex"]
+source_file="res://assets/Enemy Sprites/skullbat-Sheet.png"
+dest_files=["res://.godot/imported/skullbat-Sheet.png-8dd13fc1ac62fdb1b2cbb91223fb2518.ctex"]
 
 [params]
 
