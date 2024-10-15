@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d366qf46uuojg"
-path="res://.godot/imported/Divergent_Knight-Sheet.png-2f61a83f19fe4ba99cd9bd259477a691.ctex"
+uid="uid://co2q86hugutet"
+path="res://.godot/imported/ThiefMainCharacter-Sheet.png-f9745a64412b62fd89f27a95da814b66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Knight PlayerCharacter Sprite/Divergent_Knight-Sheet.png"
-dest_files=["res://.godot/imported/Divergent_Knight-Sheet.png-2f61a83f19fe4ba99cd9bd259477a691.ctex"]
+source_file="res://assets/Player Character/ThiefMainCharacter-Sheet.png"
+dest_files=["res://.godot/imported/ThiefMainCharacter-Sheet.png-f9745a64412b62fd89f27a95da814b66.ctex"]
 
 [params]
 
