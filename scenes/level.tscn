@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://crlwhfdpwu7u7"]
+[gd_scene load_steps=12 format=3 uid="uid://crlwhfdpwu7u7"]
 
 [ext_resource type="Texture2D" uid="uid://o2twj62fxv4o" path="res://assets/Tileset Sprites/medievalgamejamtileset (1).png" id="1_6fp4o"]
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_lvtta"]
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="3_cld70"]
+[ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/scene_zone.tscn" id="4_hw4ev"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh7li"]
 texture = ExtResource("1_6fp4o")
@@ -70,9 +71,9 @@ texture = ExtResource("1_6fp4o")
 7:5/0 = 0
 8:5/0 = 0
 9:5/animation_columns = 3
-9:5/animation_frame_0/duration = 1.0
-9:5/animation_frame_1/duration = 1.0
-9:5/animation_frame_2/duration = 1.0
+9:5/animation_frame_0/duration = 0.2
+9:5/animation_frame_1/duration = 0.2
+9:5/animation_frame_2/duration = 0.2
 9:5/0 = 0
 0:6/0 = 0
 1:6/0 = 0
@@ -137,51 +138,57 @@ layer_1/tile_data = PackedInt32Array(-3, 131072, 2, -2, 131072, 2, -1, 131072, 2
 [node name="player" parent="." instance=ExtResource("2_lvtta")]
 position = Vector2(-71, -24)
 
-[node name="Killbox" parent="." instance=ExtResource("3_cld70")]
+[node name="Killboxs" type="Node" parent="."]
+
+[node name="Killbox" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox"]
 position = Vector2(-40, -50.5)
 shape = SubResource("RectangleShape2D_uaipx")
 
-[node name="Killbox2" parent="." instance=ExtResource("3_cld70")]
+[node name="Killbox2" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox2"]
 position = Vector2(-216, -211)
 shape = SubResource("RectangleShape2D_uaipx")
 
-[node name="Killbox3" parent="." instance=ExtResource("3_cld70")]
+[node name="Killbox3" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox3"]
 position = Vector2(-152, -291)
 shape = SubResource("RectangleShape2D_uaipx")
 
-[node name="Killbox4" parent="." instance=ExtResource("3_cld70")]
+[node name="Killbox4" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox4"]
 position = Vector2(8, -227)
 shape = SubResource("RectangleShape2D_sawme")
 
-[node name="Killbox5" parent="." instance=ExtResource("3_cld70")]
+[node name="Killbox5" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox5"]
 position = Vector2(87.5, -183)
 shape = SubResource("RectangleShape2D_wnevk")
 
-[node name="Killbox6" parent="." instance=ExtResource("3_cld70")]
+[node name="Killbox6" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox6"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox6"]
 position = Vector2(135.5, -183)
 shape = SubResource("RectangleShape2D_ts1be")
 
-[node name="Killbox7" parent="." instance=ExtResource("3_cld70")]
+[node name="Killbox7" parent="Killboxs" instance=ExtResource("3_cld70")]
 position = Vector2(560, 31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox7"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killboxs/Killbox7"]
 position = Vector2(183.5, -183)
 shape = SubResource("RectangleShape2D_iaii8")
+
+[node name="Scene Zone" parent="." instance=ExtResource("4_hw4ev")]
+position = Vector2(584, -31)
+nextScene = "res://scenes/main_menu.tscn"
