@@ -1,3 +1,5 @@
 res://scenes/level.tscn
 res://scenes/player.tscn
-res://scripts/LandingState.gd
+res://scenes/killbox.tscn
+res://scenes/main_menu.tscn
+res://scenes/options_menu.tscn

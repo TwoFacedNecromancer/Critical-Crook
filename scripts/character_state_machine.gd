@@ -1,3 +1,5 @@
+#honestly idk how most of this works but its the set up for the state machine so don't touch it
+
 extends Node
 
 class_name CharacterStateMachine
