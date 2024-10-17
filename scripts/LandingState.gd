@@ -23,6 +23,7 @@ func state_process(delta):
 		
 			if(timer <= 0 ):
 				timer = 1
+				get_parent().get_parent().speed_boost = 0
 				playback.travel("move")
 				next_state = ground_state
 			else:
