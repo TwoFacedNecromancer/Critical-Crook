@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729116492
+::res://::1729190395
 icon.svg::CompressedTexture2D::5814638739882052501::1727363546::1729032917::1::::<><>::
 ::res://addons/::1727363546
 ::res://addons/godot-git-plugin/::1727363546
@@ -18,27 +18,27 @@ skullbat-Sheet.png::CompressedTexture2D::6545887065200095048::1729032882::172903
 ThiefMainCharacter-Sheet.png::CompressedTexture2D::5812255420716414503::1729032882::1729032917::1::::<><>::
 ::res://assets/Tileset Sprites/::1729032917
 medievalgamejamtileset (1).png::CompressedTexture2D::1039575442453993444::1729032882::1729032917::1::::<><>::
-::res://scenes/::1729108715
-killbox.tscn::PackedScene::2969804116306660742::1729108715::0::1::::<><>::res://scripts/killbox.gd
-level.tscn::PackedScene::5990108406888525160::1729108715::0::1::::<><>::uid://o2twj62fxv4o::::res://assets/Tileset Sprites/medievalgamejamtileset (1).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn
-main_menu.tscn::PackedScene::2198407506177316443::1729108715::0::1::::<><>::res://scripts/main_menu.gd
-options_menu.tscn::PackedScene::7165244350448618947::1729108715::0::1::::<><>::res://scripts/options_menu.gd
-player.tscn::PackedScene::4093284851029089395::1729108715::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
+::res://scenes/::1729123086
+killbox.tscn::PackedScene::2969804116306660742::1729123086::0::1::::<><>::res://scripts/killbox.gd
+level.tscn::PackedScene::5990108406888525160::1729123086::0::1::::<><>::uid://o2twj62fxv4o::::res://assets/Tileset Sprites/medievalgamejamtileset (1).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn
+main_menu.tscn::PackedScene::2198407506177316443::1729123086::0::1::::<><>::res://scripts/main_menu.gd
+options_menu.tscn::PackedScene::7165244350448618947::1729123086::0::1::::<><>::res://scripts/options_menu.gd
+player.tscn::PackedScene::4093284851029089395::1729123086::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
 statedebuglabel.gd::GDScript::-1::1728916024::0::1::::<>Label<>::
-::res://scripts/::1729032882
+::res://scripts/::1729123086
 AirState.gd::GDScript::-1::1728916024::0::1::::AirState<>State<>::
 character_state_machine.gd::GDScript::-1::1728916024::0::1::::CharacterStateMachine<>Node<>::
 climbing.gd::GDScript::-1::1727375319::0::1::::<>Node<>::
-climbingState.gd::GDScript::-1::1728916024::0::1::::ClimbingState<>State<>::
+climbingState.gd::GDScript::-1::1729123086::0::1::::ClimbingState<>State<>::
 death.gd::GDScript::-1::1728916055::0::1::::DeathState<>State<>::
-GroundState.gd::GDScript::-1::1728916024::0::1::::GroundState<>State<>::
+GroundState.gd::GDScript::-1::1729123060::0::1::::GroundState<>State<>::
 killbox.gd::GDScript::-1::1729032882::0::1::::<>Area2D<>::
-LandingState.gd::GDScript::-1::1728916024::0::1::::LandingState<>State<>::
+LandingState.gd::GDScript::-1::1729123086::0::1::::LandingState<>State<>::
 main_menu.gd::GDScript::-1::1729032882::0::1::::<>Control<>::
 options_menu.gd::GDScript::-1::1729032882::0::1::::<>Control<>::
 player.gd::GDScript::-1::1729032882::0::1::::<>CharacterBody2D<>::
 sliding.gd::GDScript::-1::1727363546::0::1::::<>Node<>::
-slidingState.gd::GDScript::-1::1728916024::0::1::::SlidingState<>State<>::
+slidingState.gd::GDScript::-1::1729123086::0::1::::SlidingState<>State<>::
 State.gd::GDScript::-1::1727363546::0::1::::State<>Node<>::
 statedebuglabel_2.gd::GDScript::-1::1728916024::0::1::::<>Label<>::
 state_machine.gd::GDScript::-1::1727363546::0::1::::<>Node<>::

@@ -7,7 +7,7 @@ class_name SlidingState
 @export var air_state : State
 
 #used for jumping
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -250.0
 
 #gets hitboxes
 @onready var slidebox = get_parent().get_parent().find_child("slidebox")

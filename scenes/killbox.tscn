@@ -7,7 +7,7 @@ collision_layer = 3
 script = ExtResource("1_8awsd")
 
 [node name="KillboxTimer" type="Timer" parent="."]
-wait_time = 0.7
+wait_time = 0.3
 one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

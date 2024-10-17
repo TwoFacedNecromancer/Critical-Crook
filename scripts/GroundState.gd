@@ -3,7 +3,7 @@ extends State
 class_name GroundState
 
 #sets jump velocity
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -250.0
 
 #sets which nodes are air and sliding states
 @export var air_state : State

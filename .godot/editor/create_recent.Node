@@ -1,3 +1,4 @@
+Label
 CollisionShape2D
 Button
 VBoxContainer
@@ -10,5 +11,4 @@ Node
 Area2D
 TileMapLayer
 TileMap
-Label
 AnimationTree
