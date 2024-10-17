@@ -3,4 +3,3 @@ res://scenes/player.tscn
 res://scenes/killbox.tscn
 res://scenes/main_menu.tscn
 res://scenes/options_menu.tscn
-res://scripts/player.gd
