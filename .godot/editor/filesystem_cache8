@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729211927
+::res://::1729212913
 icon.svg::CompressedTexture2D::5814638739882052501::1727221035::1729202794::1::::<><>::
 ::res://addons/::1727221035
 ::res://addons/godot-git-plugin/::1727221035
@@ -8,7 +8,7 @@ plugin.cfg::TextFile::-1::1727221035::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1727221035::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1727221035
 ::res://addons/godot-git-plugin/macos/::1727221035
-::res://addons/godot-git-plugin/win64/::1729211921
+::res://addons/godot-git-plugin/win64/::1729212908
 ::res://assets/::1729202795
 Keyboard Extras.png::CompressedTexture2D::9120505288231299620::1727221035::1729202795::1::::<><>::
 Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1727221035::1729202795::1::::<><>::
@@ -22,15 +22,14 @@ quitbutton-Sheet.png::CompressedTexture2D::8253478092859649997::1729202624::1729
 startbutton-Sheet.png::CompressedTexture2D::1852399419006517433::1729202624::1729202794::1::::<><>::
 ::res://assets/Player Character/::1729203886
 ThiefMainCharacter-Sheet.png::CompressedTexture2D::5812255420716414503::1729203802::1729203886::1::::<><>::
-::res://assets/Tileset Sprites/::1729202795
-medievalgamejamtileset (1).png::CompressedTexture2D::1039575442453993444::1729202624::1729202794::1::::<><>::
-medievalgamejamtileset(final).png::CompressedTexture2D::721533403535973246::1729202624::1729202794::1::::<><>::
-::res://scenes/::1729205397
-killbox.tscn::PackedScene::2969804116306660742::1729205322::0::1::::<><>::res://scripts/killbox.gd
-level.tscn::PackedScene::5990108406888525160::1729205397::0::1::::<><>::uid://o2twj62fxv4o::::res://assets/Tileset Sprites/medievalgamejamtileset (1).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://co3wirukhwg2h::::res://icon.svg
-main_menu.tscn::PackedScene::2198407506177316443::1729205322::0::1::::<><>::res://scripts/main_menu.gd
-options_menu.tscn::PackedScene::7165244350448618947::1729205322::0::1::::<><>::res://scripts/options_menu.gd
-player.tscn::PackedScene::4093284851029089395::1729205322::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
+::res://assets/Tileset Sprites/::1729216552
+medievalgamejamtileset(final).png::CompressedTexture2D::721533403535973246::1729212865::1729212913::1::::<><>::
+::res://scenes/::1729216440
+killbox.tscn::PackedScene::2969804116306660742::1729216413::0::1::::<><>::res://scripts/killbox.gd
+level.tscn::PackedScene::5990108406888525160::1729216440::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://co3wirukhwg2h::::res://icon.svg
+main_menu.tscn::PackedScene::2198407506177316443::1729216413::0::1::::<><>::res://scripts/main_menu.gd
+options_menu.tscn::PackedScene::7165244350448618947::1729216413::0::1::::<><>::res://scripts/options_menu.gd
+player.tscn::PackedScene::4093284851029089395::1729216563::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scenes/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
 scene_zone.tscn::PackedScene::8050471452728428913::1729123184::0::1::::<><>::res://scripts/scene_zone.gd
 statedebuglabel.gd::GDScript::-1::1728948325::0::1::::<>Label<>::
 ::res://scripts/::1729123178
