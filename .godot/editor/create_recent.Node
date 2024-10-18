@@ -1,4 +1,4 @@
-Label
+Node
 CollisionShape2D
 Button
 VBoxContainer
@@ -7,8 +7,8 @@ Panel
 Control
 Sprite2D
 Timer
-Node
 Area2D
 TileMapLayer
 TileMap
+Label
 AnimationTree
