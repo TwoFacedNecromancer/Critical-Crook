@@ -2,5 +2,7 @@ extends State
 
 class_name DeathState
 
-#this currently does nothing because apparently I didn't even need it.
-#*sigh*
+
+func _process(delta: float) -> void:
+	if get_parent().get_parent().isdead==true:
+		playback.travel("death")

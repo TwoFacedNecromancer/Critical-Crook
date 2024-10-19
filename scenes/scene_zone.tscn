@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/scene_zone.gd" id="1_qmkqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smrph"]
-size = Vector2(14, 30)
+size = Vector2(16, 32)
 
 [node name="Scene Zone" type="Area2D"]
 script = ExtResource("1_qmkqg")
