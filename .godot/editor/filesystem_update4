@@ -1,7 +1,10 @@
-res://scenes/level.tscn
-res://scripts/options_menu.gd
+res://scenes/skull_bat.tscn
 res://scenes/player.tscn
+res://scenes/level.tscn
 res://scenes/killbox.tscn
 res://scenes/main_menu.tscn
 res://scenes/options_menu.tscn
-res://scripts/main_menu.gd
+res://scripts/skull_bat.gd
+res://scripts/killbox.gd
+res://scripts/scene_zone.gd
+res://scenes/scene_zone.tscn
