@@ -1,8 +1,5 @@
 res://scenes/level.tscn
-res://scripts/scene_zone.gd
 res://scenes/player.tscn
 res://scenes/killbox.tscn
-res://scenes/scene_zone.tscn
 res://scenes/main_menu.tscn
 res://scenes/options_menu.tscn
-res://scripts/killbox.gd
