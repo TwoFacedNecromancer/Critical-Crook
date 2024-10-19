@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://6k6pkx6awnct"]
+[gd_scene load_steps=9 format=3 uid="uid://6k6pkx6awnct"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_1qosb"]
+[ext_resource type="Texture2D" uid="uid://sdckikkonbdl" path="res://assets/Main Menu Assets/mainscreen.png" id="2_lxabp"]
+[ext_resource type="Texture2D" uid="uid://dmxs2dpe2y646" path="res://assets/Main Menu Assets/startbutton-up.png" id="3_rfhg2"]
+[ext_resource type="Texture2D" uid="uid://pa6c0dd8pbwi" path="res://assets/Main Menu Assets/startbutton-down.png" id="4_hskm7"]
+[ext_resource type="Texture2D" uid="uid://bj5grny8s2atx" path="res://assets/Main Menu Assets/optionsbutton-up.png" id="5_msjyu"]
+[ext_resource type="Texture2D" uid="uid://7adneoxxecd5" path="res://assets/Main Menu Assets/optionsbutton-down.png" id="6_a0cfg"]
+[ext_resource type="Texture2D" uid="uid://b0lq0o0aemwnh" path="res://assets/Main Menu Assets/quitbutton-up.png" id="7_nx38r"]
+[ext_resource type="Texture2D" uid="uid://d7fije4pf7lp" path="res://assets/Main Menu Assets/quitbutton-down.png" id="8_1g5c3"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -11,58 +18,52 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1qosb")
 
-[node name="PlayButton" type="Button" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -200.0
-offset_top = 100.0
-offset_right = 200.0
-offset_bottom = 300.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 36
-text = "Play
-"
+grow_vertical = 2
+texture = ExtResource("2_lxabp")
 
-[node name="OptionsButton" type="Button" parent="."]
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 780.0
+offset_right = 536.0
+offset_bottom = 1015.0
+texture_normal = ExtResource("3_rfhg2")
+texture_pressed = ExtResource("4_hskm7")
+stretch_mode = 4
+
+[node name="OptionsButton" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -225.0
-offset_top = -100.0
-offset_right = 225.0
-offset_bottom = 100.0
+offset_left = -188.0
+offset_top = 240.0
+offset_right = 188.0
+offset_bottom = 475.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 36
-text = "Options"
+texture_normal = ExtResource("5_msjyu")
+texture_pressed = ExtResource("6_a0cfg")
+stretch_mode = 4
 
-[node name="QuitButton" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -200.0
-offset_top = -300.0
-offset_right = 200.0
-offset_bottom = -100.0
-grow_horizontal = 2
-grow_vertical = 0
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 36
-text = "Quit"
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1360.0
+offset_top = 780.0
+offset_right = 1736.0
+offset_bottom = 1015.0
+texture_normal = ExtResource("7_nx38r")
+texture_pressed = ExtResource("8_1g5c3")
+stretch_mode = 4
 
-[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

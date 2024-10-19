@@ -9,7 +9,7 @@ class_name ClimbingState
 @export var can_climb : bool = true
 
 #used to jump
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -250.0
 
 #processed every frame
 func state_process(delta):

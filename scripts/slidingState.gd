@@ -5,9 +5,10 @@ class_name SlidingState
 #gets state nodes
 @export var ground_state : State
 @export var air_state : State
+@export var death_state : State
 
 #used for jumping
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -250.0
 
 #gets hitboxes
 @onready var slidebox = get_parent().get_parent().find_child("slidebox")
@@ -26,6 +27,11 @@ func state_process(delta):
 	#ticks timer
 	timer -= 0.1
 	
+	
+	if get_parent().get_parent().isdead==true:
+		next_state = death_state
+
+
 	#ends slide
 	if((character.is_on_floor() and !Input.is_action_pressed("slide")) or timer <= 0):
 		if(overlap == false):

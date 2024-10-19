@@ -6,6 +6,7 @@ class_name AirState
 @export var landing_state : State
 @export var climbing_state : State
 @export var ground_state : State
+@export var death_state : State
 
 #used for prepping a jump
 var jump_prep : bool = false
@@ -13,6 +14,10 @@ var timer : float = 2.0
 
 #processed every frame
 func state_process(delta):
+	
+	if get_parent().get_parent().isdead==true:
+		next_state = death_state
+		return
 	
 	#preps a jump
 	if Input.is_action_just_pressed("jump") and timer >= 0:

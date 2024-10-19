@@ -12,7 +12,7 @@ class_name LandingState
 @onready var hitbox = get_parent().get_parent().find_child("hitbox")
 
 #used for jumping
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -250.0
 
 #used for determining how large the landing window is
 var timer : float = 0.4

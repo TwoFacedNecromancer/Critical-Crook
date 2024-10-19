@@ -3,11 +3,12 @@ extends State
 class_name GroundState
 
 #sets jump velocity
-@export var jump_velocity : float = -200.0
+@export var jump_velocity : float = -250.0
 
 #sets which nodes are air and sliding states
 @export var air_state : State
 @export var sliding_state : State
+@export var death_state : State
 
 #sets which animation is used for jump
 @export var jump_animation : String = "jump_start"
@@ -18,6 +19,10 @@ class_name GroundState
 
 #processed every frame
 func state_process(delta):
+	
+	if get_parent().get_parent().isdead==true:
+		next_state = death_state
+
 	#sets how long you can slide for
 	sliding_state.timer = 4.0
 	

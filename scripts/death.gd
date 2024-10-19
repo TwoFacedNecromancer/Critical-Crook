@@ -2,5 +2,10 @@ extends State
 
 class_name DeathState
 
-#this currently does nothing because apparently I didn't even need it.
-#*sigh*
+var deathtoggle : bool = false
+
+func _process(delta: float) -> void:
+	if get_parent().get_parent().isdead==true:
+		if(deathtoggle == false):
+			playback.travel("death")
+			deathtoggle = true

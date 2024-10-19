@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o2twj62fxv4o"
-path="res://.godot/imported/medievalgamejamtileset (1).png-7581a93ea80dce7b5296a95e09138d3e.ctex"
+uid="uid://kjrsxq64pyhi"
+path="res://.godot/imported/medievalgamejamtileset(final).png-5dd60c47381d60c03194d3881694db5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset Sprites/medievalgamejamtileset (1).png"
-dest_files=["res://.godot/imported/medievalgamejamtileset (1).png-7581a93ea80dce7b5296a95e09138d3e.ctex"]
+source_file="res://assets/Tileset Sprites/medievalgamejamtileset(final).png"
+dest_files=["res://.godot/imported/medievalgamejamtileset(final).png-5dd60c47381d60c03194d3881694db5d.ctex"]
 
 [params]
 
