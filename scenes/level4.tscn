@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://kjrsxq64pyhi" path="res://assets/Tileset Sprites/medievalgamejamtileset(final).png" id="1_vjguf"]
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_qfg5p"]
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="3_bduw4"]
-[ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/scene_zone.tscn" id="4_c7ft1"]
+[ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/transition_zone.tscn" id="4_c7ft1"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh7li"]
 texture = ExtResource("1_vjguf")

@@ -22,7 +22,6 @@ var isdead = false
 func _physics_process(delta: float) -> void:
 	if isdead == true:
 		return
-	
 	if(state_machine.current_state.name == "Air" and timer >= 0):
 		timer -= 0.2 * delta
 	elif(not state_machine.current_state.name == "Air"):

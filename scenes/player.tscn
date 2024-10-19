@@ -474,10 +474,11 @@ character = NodePath("..")
 current_state = NodePath("Ground")
 animation_tree = NodePath("../AnimationTree")
 
-[node name="Ground" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("air_state", "sliding_state")]
+[node name="Ground" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("air_state", "sliding_state", "death_state")]
 script = ExtResource("4_jn5ca")
 air_state = NodePath("../Air")
 sliding_state = NodePath("../Sliding")
+death_state = NodePath("../Death")
 
 [node name="Air" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("landing_state", "climbing_state", "ground_state", "death_state")]
 script = ExtResource("5_wr6xj")
@@ -492,10 +493,11 @@ ground_state = NodePath("../Ground")
 air_state = NodePath("../Air")
 sliding_state = NodePath("../Sliding")
 
-[node name="Sliding" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
+[node name="Sliding" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state", "air_state", "death_state")]
 script = ExtResource("7_qf28v")
 ground_state = NodePath("../Ground")
 air_state = NodePath("../Air")
+death_state = NodePath("../Death")
 
 [node name="Climbing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("air_state")]
 script = ExtResource("8_mgiqj")

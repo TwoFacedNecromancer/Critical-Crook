@@ -1,10 +1,12 @@
-res://scenes/skull_bat.tscn
 res://scenes/player.tscn
-res://scenes/level.tscn
 res://scenes/killbox.tscn
 res://scenes/main_menu.tscn
 res://scenes/options_menu.tscn
-res://scripts/skull_bat.gd
-res://scripts/killbox.gd
-res://scripts/scene_zone.gd
+res://scenes/skull_bat.tscn
 res://scenes/scene_zone.tscn
+res://scripts/GroundState.gd
+res://scripts/AirState.gd
+res://scripts/player.gd
+res://scripts/death.gd
+res://scenes/transition_zone.tscn
+res://scripts/slidingState.gd
