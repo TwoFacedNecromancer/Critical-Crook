@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1nk0ophq546x"
-path="res://.godot/imported/startbutton-Sheet.png-e9507a57e9a25d2eaee9fb1a77df21a8.ctex"
+uid="uid://dlqei6h8v0xme"
+path="res://.godot/imported/backbutton-up.png-8bf076718a67dd90242b2c9a603b0ca7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Main Menu Assets/startbutton-Sheet.png"
-dest_files=["res://.godot/imported/startbutton-Sheet.png-e9507a57e9a25d2eaee9fb1a77df21a8.ctex"]
+source_file="res://assets/Main Menu Assets/backbutton-up.png"
+dest_files=["res://.godot/imported/backbutton-up.png-8bf076718a67dd90242b2c9a603b0ca7.ctex"]
 
 [params]
 

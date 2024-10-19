@@ -1,6 +1,9 @@
+CheckButton
+Button
+TextureButton
+TextureRect
 Node
 CollisionShape2D
-Button
 VBoxContainer
 MarginContainer
 Panel
@@ -10,5 +13,3 @@ Timer
 Area2D
 TileMapLayer
 TileMap
-Label
-AnimationTree
