@@ -1,6 +1,6 @@
+CollisionShape2D
 Timer
 RayCast2D
-CollisionShape2D
 AnimationTree
 Sprite2D
 AnimationPlayer
@@ -12,4 +12,3 @@ TextureButton
 TextureRect
 VBoxContainer
 MarginContainer
-Panel
