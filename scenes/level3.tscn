@@ -185,10 +185,6 @@ position = Vector2(-7, -23)
 position = Vector2(1288, -256)
 nextScene = "res://scenes/level4.tscn"
 
-[node name="SkullBat" parent="." instance=ExtResource("4_fcafj")]
-position = Vector2(-94, -53)
-movementType = true
-
 [node name="Killbox" parent="." instance=ExtResource("3_wvxyh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
@@ -236,6 +232,10 @@ shape = SubResource("RectangleShape2D_rr8tf")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox8"]
 position = Vector2(-144, 74.5)
 shape = SubResource("RectangleShape2D_4rr6s")
+
+[node name="SkullBat" parent="." instance=ExtResource("4_fcafj")]
+position = Vector2(-94, -53)
+movementType = true
 
 [node name="SkullBat2" parent="." instance=ExtResource("4_fcafj")]
 position = Vector2(1250, -271)
