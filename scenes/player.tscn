@@ -430,7 +430,7 @@ states/move/position = Vector2(384, 100)
 states/sliding/node = SubResource("AnimationNodeAnimation_6clab")
 states/sliding/position = Vector2(558, 11)
 transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition_2cxdy"), "move", "jump_start", SubResource("AnimationNodeStateMachineTransition_1teka"), "jump_start", "jump_end", SubResource("AnimationNodeStateMachineTransition_to6l5"), "jump_end", "move", SubResource("AnimationNodeStateMachineTransition_1pfa6"), "move", "sliding", SubResource("AnimationNodeStateMachineTransition_oisxf"), "sliding", "move", SubResource("AnimationNodeStateMachineTransition_aqk08"), "jump_start", "climbing", SubResource("AnimationNodeStateMachineTransition_rtcc1"), "climbing", "jump_start", SubResource("AnimationNodeStateMachineTransition_dkgyj")]
-graph_offset = Vector2(-259, -80)
+graph_offset = Vector2(-211, -39)
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 3
@@ -505,6 +505,7 @@ air_state = NodePath("../Air")
 script = ExtResource("9_ocmt1")
 
 [node name="statedebuglabel" type="Label" parent="." node_paths=PackedStringArray("state_machine")]
+visible = false
 offset_left = -51.0
 offset_top = -61.0
 offset_right = 55.0
@@ -514,6 +515,7 @@ script = ExtResource("7_01o2n")
 state_machine = NodePath("../CharacterStateMachine")
 
 [node name="statedebuglabel2" type="Label" parent="."]
+visible = false
 offset_left = -51.0
 offset_top = -79.0
 offset_right = 55.0
