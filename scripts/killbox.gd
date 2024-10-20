@@ -5,7 +5,7 @@ signal death_signal
 @onready var killbox_timer: Timer = $KillboxTimer
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(body: CharacterBody2D) -> void:
 	body.isdead = true
 	killbox_timer.start()
 

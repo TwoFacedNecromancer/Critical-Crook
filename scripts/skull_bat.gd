@@ -17,8 +17,10 @@ func _process(delta: float) -> void:
 	if movementType == true:
 		position.x += speed * direction * delta
 		if rayCastRight.is_colliding():
-			direction = -1
-			sprite.flip_h=false
+			if(rayCastRight.get_collider()):
+				direction = -1
+				sprite.flip_h=false
 		elif rayCastLeft.is_colliding():
-			direction = 1
-			sprite.flip_h=true
+			if(rayCastLeft.get_collider()):
+				direction = 1
+				sprite.flip_h=true
