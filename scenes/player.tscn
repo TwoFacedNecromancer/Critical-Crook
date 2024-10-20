@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://byk22k2gt7eul"]
+[gd_scene load_steps=43 format=3 uid="uid://byk22k2gt7eul"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rpi6m"]
 [ext_resource type="Texture2D" uid="uid://co2q86hugutet" path="res://assets/Player Character/ThiefMainCharacter-Sheet.png" id="2_bjufc"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://scripts/climbingState.gd" id="8_mgiqj"]
 [ext_resource type="Script" path="res://scripts/death.gd" id="9_ocmt1"]
 [ext_resource type="Script" path="res://scripts/statedebuglabel_2.gd" id="10_hok0x"]
+[ext_resource type="PackedScene" uid="uid://i2ruq572d7rs" path="res://scenes/pause_menu.tscn" id="12_35eue"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yojms"]
 size = Vector2(15.5, 26.5)
@@ -366,7 +367,7 @@ _data = {
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iqxfd"]
 animation = &"climbing"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jkgtk"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1qpmp"]
 animation = &"death"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mon5d"]
@@ -419,8 +420,8 @@ advance_mode = 2
 states/Start/position = Vector2(224, 100)
 states/climbing/node = SubResource("AnimationNodeAnimation_iqxfd")
 states/climbing/position = Vector2(523, -71)
-states/death/node = SubResource("AnimationNodeAnimation_jkgtk")
-states/death/position = Vector2(224, 11)
+states/death/node = SubResource("AnimationNodeAnimation_1qpmp")
+states/death/position = Vector2(900, -42)
 states/jump_end/node = SubResource("AnimationNodeAnimation_mon5d")
 states/jump_end/position = Vector2(558, 100)
 states/jump_start/node = SubResource("AnimationNodeAnimation_2gt37")
@@ -430,7 +431,7 @@ states/move/position = Vector2(384, 100)
 states/sliding/node = SubResource("AnimationNodeAnimation_6clab")
 states/sliding/position = Vector2(558, 11)
 transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition_2cxdy"), "move", "jump_start", SubResource("AnimationNodeStateMachineTransition_1teka"), "jump_start", "jump_end", SubResource("AnimationNodeStateMachineTransition_to6l5"), "jump_end", "move", SubResource("AnimationNodeStateMachineTransition_1pfa6"), "move", "sliding", SubResource("AnimationNodeStateMachineTransition_oisxf"), "sliding", "move", SubResource("AnimationNodeStateMachineTransition_aqk08"), "jump_start", "climbing", SubResource("AnimationNodeStateMachineTransition_rtcc1"), "climbing", "jump_start", SubResource("AnimationNodeStateMachineTransition_dkgyj")]
-graph_offset = Vector2(-259, -80)
+graph_offset = Vector2(-155, -120)
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 3
@@ -529,6 +530,14 @@ script = ExtResource("10_hok0x")
 zoom = Vector2(4, 4)
 process_callback = 0
 limit_bottom = 190
+
+[node name="Pause Menu" parent="Camera2D" instance=ExtResource("12_35eue")]
+visible = false
+offset_left = -240.0
+offset_top = -135.0
+offset_right = -240.0
+offset_bottom = -135.0
+scale = Vector2(0.25, 0.25)
 
 [connection signal="body_entered" from="detector" to="CharacterStateMachine/Sliding" method="_on_detector_body_entered"]
 [connection signal="body_exited" from="detector" to="CharacterStateMachine/Sliding" method="_on_detector_body_exited"]

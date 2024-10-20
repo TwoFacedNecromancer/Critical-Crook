@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d04hdvf2k7tcv"]
+[gd_scene load_steps=11 format=3 uid="uid://kx0tryky4kii"]
 
 [ext_resource type="Script" path="res://scripts/skull_bat.gd" id="1_pl4v4"]
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="1_x6k7q"]

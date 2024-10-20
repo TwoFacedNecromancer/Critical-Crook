@@ -22,6 +22,7 @@ func state_process(delta):
 	
 	if get_parent().get_parent().isdead==true:
 		next_state = death_state
+		
 
 	#sets how long you can slide for
 	sliding_state.timer = 4.0

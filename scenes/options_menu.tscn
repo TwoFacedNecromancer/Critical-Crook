@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dac5r65wkwvod"]
+[gd_scene load_steps=7 format=3 uid="uid://dac5r65wkwvod"]
 
 [ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_adtwd"]
-[ext_resource type="Texture2D" uid="uid://sdckikkonbdl" path="res://assets/Main Menu Assets/mainscreen.png" id="2_we1uq"]
+[ext_resource type="Texture2D" uid="uid://25lcma7nuygk" path="res://assets/Main Menu Assets/Level Select/levelselectscreen.png" id="2_248t7"]
 [ext_resource type="Texture2D" uid="uid://dlqei6h8v0xme" path="res://assets/Main Menu Assets/backbutton-up.png" id="3_iy4dd"]
 [ext_resource type="Texture2D" uid="uid://dtlora4a1ik5q" path="res://assets/Main Menu Assets/backbutton-down.png" id="4_jusmt"]
+[ext_resource type="Texture2D" uid="uid://bhiy8i0e7l27l" path="res://assets/Main Menu Assets/fullscreen-enabled.png" id="5_8rf58"]
+[ext_resource type="Texture2D" uid="uid://rvf585rxwyby" path="res://assets/Main Menu Assets/fullscreen-disabled.png" id="6_otqpf"]
 
 [node name="Options Menu" type="Control"]
 layout_mode = 3
@@ -13,6 +15,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_adtwd")
+backMenu = "res://scenes/main_menu.tscn"
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -21,7 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_we1uq")
+texture = ExtResource("2_248t7")
 
 [node name="BackButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -33,14 +36,16 @@ texture_normal = ExtResource("3_iy4dd")
 texture_pressed = ExtResource("4_jusmt")
 stretch_mode = 4
 
-[node name="CheckButton" type="CheckButton" parent="."]
+[node name="Fullscreen Button" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 745.0
-offset_top = 674.0
-offset_right = 872.0
-offset_bottom = 720.0
-scale = Vector2(3, 3)
-text = "Fullscreen"
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 146.0
+offset_bottom = 90.0
+scale = Vector2(5, 5)
+toggle_mode = true
+texture_normal = ExtResource("6_otqpf")
+texture_pressed = ExtResource("5_8rf58")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="toggled" from="Fullscreen Button" to="." method="_on_fullscreen_button_toggled"]

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://kjrsxq64pyhi" path="res://assets/Tileset Sprites/medievalgamejamtileset(final).png" id="1_yygxk"]
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_litxs"]
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="3_wvxyh"]
-[ext_resource type="PackedScene" uid="uid://d04hdvf2k7tcv" path="res://scenes/skull_bat.tscn" id="4_fcafj"]
+[ext_resource type="PackedScene" uid="uid://kx0tryky4kii" path="res://scenes/skull_bat.tscn" id="4_fcafj"]
 [ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/transition_zone.tscn" id="4_vw5ey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh7li"]
@@ -185,10 +185,6 @@ position = Vector2(-7, -23)
 position = Vector2(1288, -256)
 nextScene = "res://scenes/level4.tscn"
 
-[node name="SkullBat" parent="." instance=ExtResource("4_fcafj")]
-position = Vector2(-94, -53)
-movementType = true
-
 [node name="Killbox" parent="." instance=ExtResource("3_wvxyh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
@@ -236,6 +232,10 @@ shape = SubResource("RectangleShape2D_rr8tf")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox8"]
 position = Vector2(-144, 74.5)
 shape = SubResource("RectangleShape2D_4rr6s")
+
+[node name="SkullBat" parent="." instance=ExtResource("4_fcafj")]
+position = Vector2(-94, -53)
+movementType = true
 
 [node name="SkullBat2" parent="." instance=ExtResource("4_fcafj")]
 position = Vector2(1250, -271)
