@@ -1,5 +1,9 @@
-VBoxContainer
 TextureButton
+ColorRect
+TextureRect
+Panel
+CheckBox
+VBoxContainer
 GridContainer
 Timer
 RayCast2D
@@ -8,7 +12,3 @@ AnimationTree
 Sprite2D
 AnimationPlayer
 AnimatedSprite2D
-Node
-CheckButton
-Button
-TextureRect
