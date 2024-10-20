@@ -366,7 +366,7 @@ _data = {
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iqxfd"]
 animation = &"climbing"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jkgtk"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1qpmp"]
 animation = &"death"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mon5d"]
@@ -419,8 +419,8 @@ advance_mode = 2
 states/Start/position = Vector2(224, 100)
 states/climbing/node = SubResource("AnimationNodeAnimation_iqxfd")
 states/climbing/position = Vector2(523, -71)
-states/death/node = SubResource("AnimationNodeAnimation_jkgtk")
-states/death/position = Vector2(224, 11)
+states/death/node = SubResource("AnimationNodeAnimation_1qpmp")
+states/death/position = Vector2(900, -42)
 states/jump_end/node = SubResource("AnimationNodeAnimation_mon5d")
 states/jump_end/position = Vector2(558, 100)
 states/jump_start/node = SubResource("AnimationNodeAnimation_2gt37")
@@ -430,7 +430,7 @@ states/move/position = Vector2(384, 100)
 states/sliding/node = SubResource("AnimationNodeAnimation_6clab")
 states/sliding/position = Vector2(558, 11)
 transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition_2cxdy"), "move", "jump_start", SubResource("AnimationNodeStateMachineTransition_1teka"), "jump_start", "jump_end", SubResource("AnimationNodeStateMachineTransition_to6l5"), "jump_end", "move", SubResource("AnimationNodeStateMachineTransition_1pfa6"), "move", "sliding", SubResource("AnimationNodeStateMachineTransition_oisxf"), "sliding", "move", SubResource("AnimationNodeStateMachineTransition_aqk08"), "jump_start", "climbing", SubResource("AnimationNodeStateMachineTransition_rtcc1"), "climbing", "jump_start", SubResource("AnimationNodeStateMachineTransition_dkgyj")]
-graph_offset = Vector2(-259, -80)
+graph_offset = Vector2(-155, -120)
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 3
