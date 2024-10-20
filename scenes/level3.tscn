@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_litxs"]
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="3_wvxyh"]
 [ext_resource type="PackedScene" uid="uid://kx0tryky4kii" path="res://scenes/skull_bat.tscn" id="4_fcafj"]
-[ext_resource type="PackedScene" path="res://scenes/transition_zone.tscn" id="4_vw5ey"]
+[ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/transition_zone.tscn" id="4_vw5ey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh7li"]
 texture = ExtResource("1_yygxk")
