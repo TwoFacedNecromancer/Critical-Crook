@@ -1,9 +1,10 @@
-[gd_scene load_steps=33 format=3 uid="uid://cf42y6wq5k45f"]
+[gd_scene load_steps=36 format=3 uid="uid://cf42y6wq5k45f"]
 
+[ext_resource type="Script" path="res://scripts/level_select_menu.gd" id="1_bw1fv"]
 [ext_resource type="Texture2D" uid="uid://25lcma7nuygk" path="res://assets/Main Menu Assets/Level Select/levelselectscreen.png" id="1_lba7t"]
 [ext_resource type="Texture2D" uid="uid://0qvy7lytjqcv" path="res://assets/Main Menu Assets/Level Select/Button01-up.png" id="2_6qkgw"]
 [ext_resource type="Texture2D" uid="uid://dnqg16r7eedhc" path="res://assets/Main Menu Assets/Level Select/Button01-down.png" id="2_k2ynn"]
-[ext_resource type="Script" path="res://scenes/levelSelectButton.gd" id="3_f5yis"]
+[ext_resource type="Script" path="res://scripts/levelSelectButton.gd" id="3_f5yis"]
 [ext_resource type="Texture2D" uid="uid://cjt0jmu7wyf2k" path="res://assets/Main Menu Assets/Level Select/Button02-up.png" id="4_hl0qn"]
 [ext_resource type="Texture2D" uid="uid://ct2s35a510a1m" path="res://assets/Main Menu Assets/Level Select/Button02-down.png" id="5_ejxdy"]
 [ext_resource type="Texture2D" uid="uid://c7elmen3if3wb" path="res://assets/Main Menu Assets/Level Select/Button03-up.png" id="7_1uh8o"]
@@ -32,6 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://bpsvopyuk7i2b" path="res://assets/Main Menu Assets/Level Select/Button14-down.png" id="30_eh5hu"]
 [ext_resource type="Texture2D" uid="uid://6ipvhbmc1xrm" path="res://assets/Main Menu Assets/Level Select/Button15-up.png" id="31_bs4fb"]
 [ext_resource type="Texture2D" uid="uid://c4ow58mc3dw76" path="res://assets/Main Menu Assets/Level Select/Button15-down.png" id="32_iyb1b"]
+[ext_resource type="Texture2D" uid="uid://dlqei6h8v0xme" path="res://assets/Main Menu Assets/backbutton-up.png" id="33_mpe4o"]
+[ext_resource type="Texture2D" uid="uid://dtlora4a1ik5q" path="res://assets/Main Menu Assets/backbutton-down.png" id="34_hwdgm"]
 
 [node name="Level Select Menu" type="Control"]
 layout_mode = 3
@@ -40,6 +43,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bw1fv")
+backMenu = "res://scenes/main_menu.tscn"
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -92,6 +97,7 @@ layout_mode = 2
 texture_normal = ExtResource("11_mesh5")
 texture_pressed = ExtResource("12_y26lb")
 script = ExtResource("3_f5yis")
+selectScene = "res://scenes/level5.tscn"
 
 [node name="Button06" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
@@ -153,6 +159,16 @@ texture_normal = ExtResource("31_bs4fb")
 texture_pressed = ExtResource("32_iyb1b")
 script = ExtResource("3_f5yis")
 
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1659.0
+offset_top = 882.0
+offset_right = 1909.0
+offset_bottom = 1090.0
+texture_normal = ExtResource("33_mpe4o")
+texture_pressed = ExtResource("34_hwdgm")
+stretch_mode = 4
+
 [connection signal="pressed" from="GridContainer/Button01" to="GridContainer/Button01" method="_on_pressed"]
 [connection signal="pressed" from="GridContainer/Button02" to="GridContainer/Button02" method="_on_pressed"]
 [connection signal="pressed" from="GridContainer/Button03" to="GridContainer/Button03" method="_on_pressed"]
@@ -168,3 +184,4 @@ script = ExtResource("3_f5yis")
 [connection signal="pressed" from="GridContainer/Button13" to="GridContainer/Button13" method="_on_pressed"]
 [connection signal="pressed" from="GridContainer/Button14" to="GridContainer/Button14" method="_on_pressed"]
 [connection signal="pressed" from="GridContainer/Button15" to="GridContainer/Button15" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,5 +1,7 @@
 extends Control
 
+@export var backMenu: String
+
 func _ready() -> void:
 	var config = ConfigFile.new() # instance a new ConfigFile class
 	var err = config.load("user://optionsdata.cfg")
@@ -13,7 +15,7 @@ func _ready() -> void:
 	
 
 func _on_back_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn") #goes back to the main menu
+	get_tree().change_scene_to_file(backMenu) #goes back to the main menu
 
 
 func _on_check_button_toggled(toggled_on: bool) -> void:
