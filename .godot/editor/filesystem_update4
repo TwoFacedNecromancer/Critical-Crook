@@ -6,10 +6,5 @@ res://scenes/level5.tscn
 res://scenes/skull_bat.tscn
 res://scenes/player.tscn
 res://scenes/level_select_menu.tscn
-res://scripts/level_select_menu.gd
-res://scripts/options_menu.gd
-res://scenes/options_menu.tscn
 res://scenes/main_menu.tscn
-res://scripts/GroundState.gd
-res://scripts/AirState.gd
-res://scripts/LandingState.gd
+res://scenes/options_menu.tscn

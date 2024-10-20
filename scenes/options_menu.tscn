@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dac5r65wkwvod"]
 
 [ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_adtwd"]
-[ext_resource type="Texture2D" uid="uid://sdckikkonbdl" path="res://assets/Main Menu Assets/mainscreen.png" id="2_we1uq"]
+[ext_resource type="Texture2D" uid="uid://25lcma7nuygk" path="res://assets/Main Menu Assets/Level Select/levelselectscreen.png" id="2_248t7"]
 [ext_resource type="Texture2D" uid="uid://dlqei6h8v0xme" path="res://assets/Main Menu Assets/backbutton-up.png" id="3_iy4dd"]
 [ext_resource type="Texture2D" uid="uid://dtlora4a1ik5q" path="res://assets/Main Menu Assets/backbutton-down.png" id="4_jusmt"]
 
@@ -22,7 +22,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_we1uq")
+texture = ExtResource("2_248t7")
 
 [node name="BackButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -37,9 +37,9 @@ stretch_mode = 4
 [node name="CheckButton" type="CheckButton" parent="."]
 layout_mode = 0
 offset_left = 745.0
-offset_top = 674.0
+offset_top = 174.0
 offset_right = 872.0
-offset_bottom = 720.0
+offset_bottom = 220.0
 scale = Vector2(3, 3)
 text = "Fullscreen"
 
