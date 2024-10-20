@@ -28,15 +28,16 @@ func state_process(delta):
 		
 		#slides or exits landing state if timer runs out
 		else:
-			if(Input.is_action_just_pressed("slide")):
+			if(Input.is_action_just_pressed("slide") and get_parent().get_parent().isdead==false):
 				hitbox.disabled = true
 				slidebox.disabled = false
 				timer = 1
 				next_state = sliding_state
 				playback.travel("sliding")
 		
-			if(timer <= 0 ):
+			if(timer <= 0 and get_parent().get_parent().isdead==false):
 				timer = 1
+				get_parent().get_parent().speed_boost = 0
 				playback.travel("move")
 				next_state = ground_state
 				get_parent().get_parent().speed_boost = 0

@@ -1,3 +1,6 @@
+VBoxContainer
+TextureButton
+GridContainer
 Timer
 RayCast2D
 CollisionShape2D
@@ -8,8 +11,4 @@ AnimatedSprite2D
 Node
 CheckButton
 Button
-TextureButton
 TextureRect
-VBoxContainer
-MarginContainer
-Panel

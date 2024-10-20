@@ -17,6 +17,7 @@ func state_process(delta):
 	
 	if get_parent().get_parent().isdead==true:
 		next_state = death_state
+		return
 	
 	#preps a jump
 	if Input.is_action_just_pressed("jump") and timer >= 0:
