@@ -104,6 +104,7 @@ layout_mode = 2
 texture_normal = ExtResource("13_5nqme")
 texture_pressed = ExtResource("14_iix02")
 script = ExtResource("3_f5yis")
+selectScene = "res://scenes/level6.tscn"
 
 [node name="Button07" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
