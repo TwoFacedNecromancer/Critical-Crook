@@ -37,7 +37,7 @@ func state_input(event : InputEvent):
 	if(event.is_action_pressed("jump")):
 		jump()
 	#speed boost if jumping from a slide
-	if(event.is_action_pressed("slide")):
+	if(event.is_action_pressed("slide") and get_parent().get_parent().isdead==false):
 		if(character.velocity.x != 0):
 			slide()
 
