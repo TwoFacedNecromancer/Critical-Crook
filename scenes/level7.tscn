@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bwepcmweuo18p"]
+[gd_scene load_steps=18 format=3 uid="uid://bwepcmweuo18p"]
 
 [ext_resource type="Texture2D" uid="uid://kjrsxq64pyhi" path="res://assets/Tileset Sprites/medievalgamejamtileset(final).png" id="1_kdfl6"]
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_1l7qq"]
@@ -154,8 +154,14 @@ texture = ExtResource("1_kdfl6")
 physics_layer_0/collision_layer = 3
 sources/0 = SubResource("TileSetAtlasSource_lh7li")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nd07f"]
+size = Vector2(16, 10)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8n7"]
 size = Vector2(14, 5.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2cyp"]
+size = Vector2(16, 9)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lbfi3"]
 radius = 6.0
@@ -197,8 +203,8 @@ nextScene = "res://scenes/level8.tscn"
 [node name="Killbox4" parent="killboxes" instance=ExtResource("4_cndhs")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killboxes/Killbox4"]
-position = Vector2(88, -312)
-shape = SubResource("RectangleShape2D_gc8n7")
+position = Vector2(88, -309)
+shape = SubResource("RectangleShape2D_nd07f")
 
 [node name="Killbox6" parent="killboxes" instance=ExtResource("4_cndhs")]
 
@@ -209,8 +215,8 @@ shape = SubResource("RectangleShape2D_gc8n7")
 [node name="Killbox9" parent="killboxes" instance=ExtResource("4_cndhs")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killboxes/Killbox9"]
-position = Vector2(120, -167)
-shape = SubResource("RectangleShape2D_gc8n7")
+position = Vector2(120, -164.5)
+shape = SubResource("RectangleShape2D_d2cyp")
 
 [node name="Killbox10" parent="killboxes" instance=ExtResource("4_cndhs")]
 
