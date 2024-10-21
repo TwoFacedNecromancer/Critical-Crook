@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="3_opm1j"]
 [ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/transition_zone.tscn" id="4_w8p6f"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh7li"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8esxl"]
 texture = ExtResource("1_c0n26")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -150,7 +150,7 @@ texture = ExtResource("1_c0n26")
 
 [sub_resource type="TileSet" id="TileSet_hgkj6"]
 physics_layer_0/collision_layer = 3
-sources/0 = SubResource("TileSetAtlasSource_lh7li")
+sources/0 = SubResource("TileSetAtlasSource_8esxl")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaipx"]
 size = Vector2(46, 6)

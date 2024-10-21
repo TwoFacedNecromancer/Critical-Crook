@@ -4,6 +4,7 @@ class_name ClimbingState
 
 #defines what node is the air state
 @export var air_state : State
+@export var death_state : State
 
 #used to prevent infinite climbing
 @export var can_climb : bool = true
@@ -13,6 +14,10 @@ class_name ClimbingState
 
 #processed every frame
 func state_process(delta):
+	
+	if get_parent().get_parent().isdead==true:
+		next_state = death_state
+		return
 	
 	#stops movement
 	character.velocity.y = 0

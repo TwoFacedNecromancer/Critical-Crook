@@ -1,0 +1,136 @@
+[gd_scene load_steps=11 format=3 uid="uid://b2pml7ekatbry"]
+
+[ext_resource type="PackedScene" uid="uid://bikuifldme511" path="res://scenes/killbox.tscn" id="1_lcror"]
+[ext_resource type="Script" path="res://scripts/fireman.gd" id="1_vu2ru"]
+[ext_resource type="Texture2D" uid="uid://ciwo4uxgw8go8" path="res://assets/Enemy Sprites/fireman-Sheet.png" id="2_3l4dt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwcfs"]
+size = Vector2(22, 20)
+
+[sub_resource type="Animation" id="Animation_roi6g"]
+resource_name = "Crawl"
+length = 0.4
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fireman Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_3l4dt")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fireman Sprite:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fireman Sprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_wybby"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fireman Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_3l4dt")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fireman Sprite:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fireman Sprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sm2gx"]
+_data = {
+"Crawl": SubResource("Animation_roi6g"),
+"RESET": SubResource("Animation_wybby")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_fib20"]
+animation = &"Crawl"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_fkevg"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_o0pmp"]
+states/Crawl/node = SubResource("AnimationNodeAnimation_fib20")
+states/Crawl/position = Vector2(347, 100)
+transitions = ["Start", "Crawl", SubResource("AnimationNodeStateMachineTransition_fkevg")]
+
+[node name="Fireman" type="Node2D"]
+script = ExtResource("1_vu2ru")
+
+[node name="Killbox" parent="." instance=ExtResource("1_lcror")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox"]
+shape = SubResource("RectangleShape2D_vwcfs")
+
+[node name="Fireman Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -6)
+texture = ExtResource("2_3l4dt")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_sm2gx")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_o0pmp")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(15, 0)
+collision_mask = 2
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-15, 0)
+collision_mask = 2
