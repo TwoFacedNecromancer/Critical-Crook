@@ -1,98 +1,106 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729457770
-::res://addons/::1728353035
-::res://addons/godot-git-plugin/::1728353035
-git_plugin.gdextension::GDExtension::-1::1728353035::0::1::::<><>::
-plugin.cfg::TextFile::-1::1728353035::0::1::::<><>::
-THIRDPARTY.md::TextFile::-1::1728353035::0::1::::<><>::
-::res://addons/godot-git-plugin/linux/::1728353035
-::res://addons/godot-git-plugin/macos/::1728353035
-::res://addons/godot-git-plugin/win64/::1729457764
-::res://assets/::1729373586
-Keyboard Extras.png::CompressedTexture2D::9120505288231299620::1728353035::1729457772::1::::<><>::
-Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1728353035::1729457772::1::::<><>::
-::res://assets/Enemy Sprites/::1729373586
-skullbat-Sheet.png::CompressedTexture2D::6545887065200095048::1729025958::1729457772::1::::<><>::
-::res://assets/Main Menu Assets/::1729457072
-backbutton-down.png::CompressedTexture2D::8516438676726089556::1729457072::1729457771::1::::<><>::
-backbutton-up.png::CompressedTexture2D::7964628170050847856::1729457072::1729457771::1::::<><>::
-mainscreen.png::CompressedTexture2D::1269732046779764605::1729202029::1729457772::1::::<><>::
-optionsbutton-down.png::CompressedTexture2D::2246248595512671868::1729457072::1729457772::1::::<><>::
-optionsbutton-up.png::CompressedTexture2D::3080446990913510581::1729457072::1729457772::1::::<><>::
-quitbutton-down.png::CompressedTexture2D::276944970586356669::1729457072::1729457772::1::::<><>::
-quitbutton-up.png::CompressedTexture2D::4164866820623309305::1729457072::1729457772::1::::<><>::
-startbutton-down.png::CompressedTexture2D::1054719770833219616::1729457072::1729457772::1::::<><>::
-startbutton-up.png::CompressedTexture2D::8050150166345214757::1729457072::1729457772::1::::<><>::
-::res://assets/Main Menu Assets/Level Select/::1729457072
-Button01-down.png::CompressedTexture2D::8105159450981776028::1729457072::1729457772::1::::<><>::
-Button01-up.png::CompressedTexture2D::1789070749773845329::1729457072::1729457772::1::::<><>::
-Button02-down.png::CompressedTexture2D::6163312081066860072::1729457072::1729457772::1::::<><>::
-Button02-up.png::CompressedTexture2D::5445298797080507988::1729457072::1729457772::1::::<><>::
-Button03-down.png::CompressedTexture2D::8988972402694333803::1729457072::1729457772::1::::<><>::
-Button03-up.png::CompressedTexture2D::7027831422725737541::1729457072::1729457772::1::::<><>::
-Button04-down.png::CompressedTexture2D::1074989017923327941::1729457072::1729457772::1::::<><>::
-Button04-up.png::CompressedTexture2D::6271626913053406073::1729457072::1729457772::1::::<><>::
-Button05-down.png::CompressedTexture2D::7707844582744453419::1729457072::1729457772::1::::<><>::
-Button05-up.png::CompressedTexture2D::2204367267071162499::1729457072::1729457772::1::::<><>::
-Button06-down.png::CompressedTexture2D::419655356817166582::1729457072::1729457772::1::::<><>::
-Button06-up.png::CompressedTexture2D::830254309990842125::1729457072::1729457772::1::::<><>::
-Button07-down.png::CompressedTexture2D::5953171244696842995::1729457072::1729457772::1::::<><>::
-Button07-up.png::CompressedTexture2D::5782965059967014555::1729457072::1729457772::1::::<><>::
-Button08-down.png::CompressedTexture2D::2651165805031521628::1729457072::1729457772::1::::<><>::
-Button08-up.png::CompressedTexture2D::2853832229910315649::1729457072::1729457772::1::::<><>::
-Button09-down.png::CompressedTexture2D::4225802857429580666::1729457072::1729457772::1::::<><>::
-Button09-up.png::CompressedTexture2D::6376145040724613487::1729457072::1729457772::1::::<><>::
-Button10-down.png::CompressedTexture2D::1259672470562936809::1729457072::1729457772::1::::<><>::
-Button10-up.png::CompressedTexture2D::8744501239653143689::1729457072::1729457772::1::::<><>::
-Button11-down.png::CompressedTexture2D::2711752230572176071::1729457072::1729457772::1::::<><>::
-Button11-up.png::CompressedTexture2D::3350463163519682222::1729457072::1729457772::1::::<><>::
-Button12-down.png::CompressedTexture2D::7853562290810417923::1729457072::1729457771::1::::<><>::
-Button12-up.png::CompressedTexture2D::2249385593569030863::1729457072::1729457771::1::::<><>::
-Button13-down.png::CompressedTexture2D::1259206134878139287::1729457072::1729457771::1::::<><>::
-Button13-up.png::CompressedTexture2D::8054784696001749287::1729457072::1729457771::1::::<><>::
-Button14-down.png::CompressedTexture2D::3477713021648324951::1729457072::1729457771::1::::<><>::
-Button14-up.png::CompressedTexture2D::3098161267755870283::1729457072::1729457771::1::::<><>::
-Button15-down.png::CompressedTexture2D::6838610221040627663::1729457072::1729457771::1::::<><>::
-Button15-up.png::CompressedTexture2D::2193317801132184154::1729457072::1729457771::1::::<><>::
-levelselectscreen.png::CompressedTexture2D::1957702201109230246::1729457072::1729457772::1::::<><>::
-::res://assets/Player Character/::1729457072
-ThiefMainCharacter-Sheet.png::CompressedTexture2D::5812255420716414503::1729457072::1729457772::1::::<><>::
-::res://assets/Tileset Sprites/::1729457072
-medievalgamejamtileset(final).png::CompressedTexture2D::721533403535973246::1729457072::1729457772::1::::<><>::
-::res://scenes/::1729457072
-killbox.tscn::PackedScene::2969804116306660742::1729457072::0::1::::<><>::res://scripts/killbox.gd
-level1.tscn::PackedScene::4416458037584519927::1729457072::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>res://scenes/transition_zone.tscn
-level2.tscn::PackedScene::6780820818610309477::1729457072::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>res://scenes/transition_zone.tscn
-level3.tscn::PackedScene::4590185553135247403::1729457072::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn<>res://scenes/transition_zone.tscn
-level4.tscn::PackedScene::4449994830696082332::1729457072::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>res://scenes/transition_zone.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
-level5.tscn::PackedScene::2210769807402613655::1729457072::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>res://scenes/transition_zone.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
-level6.tscn::PackedScene::3968821585229099967::1729457072::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>res://scenes/transition_zone.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
-level_select_menu.tscn::PackedScene::5185336421279545637::1729457072::0::1::::<><>::res://scripts/level_select_menu.gd<>uid://25lcma7nuygk::::res://assets/Main Menu Assets/Level Select/levelselectscreen.png<>uid://0qvy7lytjqcv::::res://assets/Main Menu Assets/Level Select/Button01-up.png<>uid://dnqg16r7eedhc::::res://assets/Main Menu Assets/Level Select/Button01-down.png<>res://scripts/levelSelectButton.gd<>uid://cjt0jmu7wyf2k::::res://assets/Main Menu Assets/Level Select/Button02-up.png<>uid://ct2s35a510a1m::::res://assets/Main Menu Assets/Level Select/Button02-down.png<>uid://c7elmen3if3wb::::res://assets/Main Menu Assets/Level Select/Button03-up.png<>uid://d1clcd4odi1id::::res://assets/Main Menu Assets/Level Select/Button03-down.png<>uid://cvma1qqk0bd18::::res://assets/Main Menu Assets/Level Select/Button04-up.png<>uid://pky6al5oers4::::res://assets/Main Menu Assets/Level Select/Button04-down.png<>uid://6n2uvqygw3d4::::res://assets/Main Menu Assets/Level Select/Button05-up.png<>uid://dh20crykejw5p::::res://assets/Main Menu Assets/Level Select/Button05-down.png<>uid://l3gfxi83ksav::::res://assets/Main Menu Assets/Level Select/Button06-up.png<>uid://f8jwr0sfqndm::::res://assets/Main Menu Assets/Level Select/Button06-down.png<>uid://conkubvbws4vn::::res://assets/Main Menu Assets/Level Select/Button07-up.png<>uid://cq204i5ieiytn::::res://assets/Main Menu Assets/Level Select/Button07-down.png<>uid://bgwog2b7gisgn::::res://assets/Main Menu Assets/Level Select/Button08-up.png<>uid://bd1ikwmtrgfbg::::res://assets/Main Menu Assets/Level Select/Button08-down.png<>uid://cw3wga52ju2k6::::res://assets/Main Menu Assets/Level Select/Button09-up.png<>uid://b1hamdfbcetti::::res://assets/Main Menu Assets/Level Select/Button09-down.png<>uid://dwt5wmplg03cn::::res://assets/Main Menu Assets/Level Select/Button10-up.png<>uid://r7gvernjc1ab::::res://assets/Main Menu Assets/Level Select/Button10-down.png<>uid://bny8vypf6jceg::::res://assets/Main Menu Assets/Level Select/Button11-up.png<>uid://bevufsqlwmcex::::res://assets/Main Menu Assets/Level Select/Button11-down.png<>uid://7bvb1hhm3m76::::res://assets/Main Menu Assets/Level Select/Button12-up.png<>uid://dj5la2gbbn58r::::res://assets/Main Menu Assets/Level Select/Button12-down.png<>uid://dm02ek7q47yhj::::res://assets/Main Menu Assets/Level Select/Button13-up.png<>uid://r676841sw432::::res://assets/Main Menu Assets/Level Select/Button13-down.png<>uid://bke1i7r75dpn4::::res://assets/Main Menu Assets/Level Select/Button14-up.png<>uid://bpsvopyuk7i2b::::res://assets/Main Menu Assets/Level Select/Button14-down.png<>uid://6ipvhbmc1xrm::::res://assets/Main Menu Assets/Level Select/Button15-up.png<>uid://c4ow58mc3dw76::::res://assets/Main Menu Assets/Level Select/Button15-down.png<>uid://dlqei6h8v0xme::::res://assets/Main Menu Assets/backbutton-up.png<>uid://dtlora4a1ik5q::::res://assets/Main Menu Assets/backbutton-down.png
-main_menu.tscn::PackedScene::2198407506177316443::1729457070::0::1::::<><>::res://scripts/main_menu.gd<>uid://sdckikkonbdl::::res://assets/Main Menu Assets/mainscreen.png<>uid://dmxs2dpe2y646::::res://assets/Main Menu Assets/startbutton-up.png<>uid://pa6c0dd8pbwi::::res://assets/Main Menu Assets/startbutton-down.png<>uid://bj5grny8s2atx::::res://assets/Main Menu Assets/optionsbutton-up.png<>uid://7adneoxxecd5::::res://assets/Main Menu Assets/optionsbutton-down.png<>uid://b0lq0o0aemwnh::::res://assets/Main Menu Assets/quitbutton-up.png<>uid://d7fije4pf7lp::::res://assets/Main Menu Assets/quitbutton-down.png
-options_menu.tscn::PackedScene::7165244350448618947::1729457072::0::1::::<><>::res://scripts/options_menu.gd<>uid://25lcma7nuygk::::res://assets/Main Menu Assets/Level Select/levelselectscreen.png<>uid://dlqei6h8v0xme::::res://assets/Main Menu Assets/backbutton-up.png<>uid://dtlora4a1ik5q::::res://assets/Main Menu Assets/backbutton-down.png
-player.tscn::PackedScene::4093284851029089395::1729457072::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scripts/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd
-level7.tscn::PackedScene::3939747745700308105::1729457819::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
-skull_bat.tscn::PackedScene::750921910086889704::1729457072::0::1::::<><>::res://scripts/skull_bat.gd<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://c0i42k7uvxxsa::::res://assets/Enemy Sprites/skullbat-Sheet.png
-transition_zone.tscn::PackedScene::8050471452728428913::1729457072::0::1::::<><>::res://scripts/transition_zone.gd
-::res://scripts/::1729457072
-AirState.gd::GDScript::-1::1729457072::0::1::::AirState<>State<>::
-character_state_machine.gd::GDScript::-1::1729025958::0::1::::CharacterStateMachine<>Node<>::
-climbing.gd::GDScript::-1::1728353035::0::1::::<>Node<>::
-climbingState.gd::GDScript::-1::1729373406::0::1::::ClimbingState<>State<>::
-death.gd::GDScript::-1::1729457072::0::1::::DeathState<>State<>::
-GroundState.gd::GDScript::-1::1729457072::0::1::::GroundState<>State<>::
-killbox.gd::GDScript::-1::1729457072::0::1::::<>Area2D<>::
-LandingState.gd::GDScript::-1::1729457072::0::1::::LandingState<>State<>::
-levelSelectButton.gd::GDScript::-1::1729457072::0::1::::<>TextureButton<>::
-level_select_menu.gd::GDScript::-1::1729457072::0::1::::<>Control<>::
-main_menu.gd::GDScript::-1::1729457072::0::1::::<>Control<>::
-options_menu.gd::GDScript::-1::1729457072::0::1::::<>Control<>::
-player.gd::GDScript::-1::1729457072::0::1::::<>CharacterBody2D<>::
-skull_bat.gd::GDScript::-1::1729457072::0::1::::<>Node2D<>::
-sliding.gd::GDScript::-1::1728353035::0::1::::<>Node<>::
-slidingState.gd::GDScript::-1::1729457072::0::1::::SlidingState<>State<>::
-State.gd::GDScript::-1::1728353035::0::1::::State<>Node<>::
-statedebuglabel.gd::GDScript::-1::1729373406::0::1::::<>Label<>::
-statedebuglabel_2.gd::GDScript::-1::1729025958::0::1::::<>Label<>::
-state_machine.gd::GDScript::-1::1728353035::0::1::::<>Node<>::
-transition_zone.gd::GDScript::-1::1729457072::0::1::::<>Area2D<>::
+::res://::1729477039
+::res://addons/::1727221035
+::res://addons/godot-git-plugin/::1727221035
+git_plugin.gdextension::GDExtension::-1::1727221035::0::1::::<><>::
+plugin.cfg::TextFile::-1::1727221035::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1727221035::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1727221035
+::res://addons/godot-git-plugin/macos/::1727221035
+::res://addons/godot-git-plugin/win64/::1729477035
+::res://assets/::1729477040
+Keyboard Extras.png::CompressedTexture2D::9120505288231299620::1727221035::1729477040::1::::<><>::
+Keyboard Letters and Symbols.png::CompressedTexture2D::1770090348770161636::1727221035::1729477040::1::::<><>::
+::res://assets/Enemy Sprites/::1729479125
+fireman-Sheet.png::CompressedTexture2D::5380671339302569597::1729479125::1729479125::1::::<><>::
+skullbat-Sheet.png::CompressedTexture2D::6545887065200095048::1728948758::1729477040::1::::<><>::
+::res://assets/Main Menu Assets/::1729477040
+backbutton-down.png::CompressedTexture2D::8516438676726089556::1729391929::1729477040::1::::<><>::
+backbutton-up.png::CompressedTexture2D::7964628170050847856::1729391909::1729477040::1::::<><>::
+fullscreen-disabled.png::CompressedTexture2D::1236921213881502682::1729458110::1729477040::1::::<><>::
+fullscreen-enabled.png::CompressedTexture2D::2895774209248943311::1729458129::1729477040::1::::<><>::
+mainscreen.png::CompressedTexture2D::1269732046779764605::1729202624::1729477040::1::::<><>::
+optionsbutton-down.png::CompressedTexture2D::2246248595512671868::1729392005::1729477040::1::::<><>::
+optionsbutton-up.png::CompressedTexture2D::3080446990913510581::1729391984::1729477040::1::::<><>::
+quitbutton-down.png::CompressedTexture2D::276944970586356669::1729392147::1729477040::1::::<><>::
+quitbutton-up.png::CompressedTexture2D::4164866820623309305::1729392069::1729477040::1::::<><>::
+resumebutton-down.png::CompressedTexture2D::4474310662446974213::1729472881::1729477040::1::::<><>::
+resumebutton-up.png::CompressedTexture2D::6927673988678574003::1729472899::1729477040::1::::<><>::
+startbutton-down.png::CompressedTexture2D::1054719770833219616::1729392177::1729477040::1::::<><>::
+startbutton-up.png::CompressedTexture2D::8050150166345214757::1729392161::1729477040::1::::<><>::
+::res://assets/Main Menu Assets/Level Select/::1729477040
+Button01-down.png::CompressedTexture2D::8105159450981776028::1729379323::1729477040::1::::<><>::
+Button01-up.png::CompressedTexture2D::1789070749773845329::1729379266::1729477040::1::::<><>::
+Button02-down.png::CompressedTexture2D::6163312081066860072::1729379338::1729477040::1::::<><>::
+Button02-up.png::CompressedTexture2D::5445298797080507988::1729379355::1729477040::1::::<><>::
+Button03-down.png::CompressedTexture2D::8988972402694333803::1729379371::1729477040::1::::<><>::
+Button03-up.png::CompressedTexture2D::7027831422725737541::1729379382::1729477040::1::::<><>::
+Button04-down.png::CompressedTexture2D::1074989017923327941::1729379391::1729477040::1::::<><>::
+Button04-up.png::CompressedTexture2D::6271626913053406073::1729379399::1729477040::1::::<><>::
+Button05-down.png::CompressedTexture2D::7707844582744453419::1729379407::1729477040::1::::<><>::
+Button05-up.png::CompressedTexture2D::2204367267071162499::1729379437::1729477040::1::::<><>::
+Button06-down.png::CompressedTexture2D::419655356817166582::1729379424::1729477040::1::::<><>::
+Button06-up.png::CompressedTexture2D::830254309990842125::1729379450::1729477040::1::::<><>::
+Button07-down.png::CompressedTexture2D::5953171244696842995::1729379457::1729477040::1::::<><>::
+Button07-up.png::CompressedTexture2D::5782965059967014555::1729379464::1729477040::1::::<><>::
+Button08-down.png::CompressedTexture2D::2651165805031521628::1729379472::1729477040::1::::<><>::
+Button08-up.png::CompressedTexture2D::2853832229910315649::1729379478::1729477040::1::::<><>::
+Button09-down.png::CompressedTexture2D::4225802857429580666::1729379493::1729477040::1::::<><>::
+Button09-up.png::CompressedTexture2D::6376145040724613487::1729379499::1729477040::1::::<><>::
+Button10-down.png::CompressedTexture2D::1259672470562936809::1729379506::1729477040::1::::<><>::
+Button10-up.png::CompressedTexture2D::8744501239653143689::1729379514::1729477040::1::::<><>::
+Button11-down.png::CompressedTexture2D::2711752230572176071::1729379522::1729477040::1::::<><>::
+Button11-up.png::CompressedTexture2D::3350463163519682222::1729379529::1729477040::1::::<><>::
+Button12-down.png::CompressedTexture2D::7853562290810417923::1729379535::1729477040::1::::<><>::
+Button12-up.png::CompressedTexture2D::2249385593569030863::1729379543::1729477040::1::::<><>::
+Button13-down.png::CompressedTexture2D::1259206134878139287::1729379552::1729477040::1::::<><>::
+Button13-up.png::CompressedTexture2D::8054784696001749287::1729379564::1729477040::1::::<><>::
+Button14-down.png::CompressedTexture2D::3477713021648324951::1729379570::1729477040::1::::<><>::
+Button14-up.png::CompressedTexture2D::3098161267755870283::1729379578::1729477040::1::::<><>::
+Button15-down.png::CompressedTexture2D::6838610221040627663::1729379584::1729477040::1::::<><>::
+Button15-up.png::CompressedTexture2D::2193317801132184154::1729379591::1729477040::1::::<><>::
+levelselectscreen.png::CompressedTexture2D::1957702201109230246::1729380656::1729477040::1::::<><>::
+::res://assets/Player Character/::1729477040
+ThiefMainCharacter-Sheet.png::CompressedTexture2D::5812255420716414503::1729392888::1729477040::1::::<><>::
+::res://assets/Tileset Sprites/::1729477040
+medievalgamejamtileset(final).png::CompressedTexture2D::721533403535973246::1729387679::1729477040::1::::<><>::
+::res://scenes/::1729479091
+killbox.tscn::PackedScene::2969804116306660742::1729382308::0::1::::<><>::res://scripts/killbox.gd
+level1.tscn::PackedScene::4416458037584519927::1729477229::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn
+level2.tscn::PackedScene::6780820818610309477::1729477230::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn
+level3.tscn::PackedScene::4590185553135247403::1729477230::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn
+level4.tscn::PackedScene::4449994830696082332::1729477230::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
+level5.tscn::PackedScene::2210769807402613655::1729477230::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
+level6.tscn::PackedScene::3968821585229099967::1729477230::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
+level7.tscn::PackedScene::3939747745700308105::1729477702::0::1::::<><>::uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png<>uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://dmxydap260r7v::::res://scenes/transition_zone.tscn<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://kx0tryky4kii::::res://scenes/skull_bat.tscn
+level_select_menu.tscn::PackedScene::5185336421279545637::1729477231::0::1::::<><>::res://scripts/level_select_menu.gd<>uid://25lcma7nuygk::::res://assets/Main Menu Assets/Level Select/levelselectscreen.png<>uid://0qvy7lytjqcv::::res://assets/Main Menu Assets/Level Select/Button01-up.png<>uid://dnqg16r7eedhc::::res://assets/Main Menu Assets/Level Select/Button01-down.png<>res://scripts/levelSelectButton.gd<>uid://cjt0jmu7wyf2k::::res://assets/Main Menu Assets/Level Select/Button02-up.png<>uid://ct2s35a510a1m::::res://assets/Main Menu Assets/Level Select/Button02-down.png<>uid://c7elmen3if3wb::::res://assets/Main Menu Assets/Level Select/Button03-up.png<>uid://d1clcd4odi1id::::res://assets/Main Menu Assets/Level Select/Button03-down.png<>uid://cvma1qqk0bd18::::res://assets/Main Menu Assets/Level Select/Button04-up.png<>uid://pky6al5oers4::::res://assets/Main Menu Assets/Level Select/Button04-down.png<>uid://6n2uvqygw3d4::::res://assets/Main Menu Assets/Level Select/Button05-up.png<>uid://dh20crykejw5p::::res://assets/Main Menu Assets/Level Select/Button05-down.png<>uid://l3gfxi83ksav::::res://assets/Main Menu Assets/Level Select/Button06-up.png<>uid://f8jwr0sfqndm::::res://assets/Main Menu Assets/Level Select/Button06-down.png<>uid://conkubvbws4vn::::res://assets/Main Menu Assets/Level Select/Button07-up.png<>uid://cq204i5ieiytn::::res://assets/Main Menu Assets/Level Select/Button07-down.png<>uid://bgwog2b7gisgn::::res://assets/Main Menu Assets/Level Select/Button08-up.png<>uid://bd1ikwmtrgfbg::::res://assets/Main Menu Assets/Level Select/Button08-down.png<>uid://cw3wga52ju2k6::::res://assets/Main Menu Assets/Level Select/Button09-up.png<>uid://b1hamdfbcetti::::res://assets/Main Menu Assets/Level Select/Button09-down.png<>uid://dwt5wmplg03cn::::res://assets/Main Menu Assets/Level Select/Button10-up.png<>uid://r7gvernjc1ab::::res://assets/Main Menu Assets/Level Select/Button10-down.png<>uid://bny8vypf6jceg::::res://assets/Main Menu Assets/Level Select/Button11-up.png<>uid://bevufsqlwmcex::::res://assets/Main Menu Assets/Level Select/Button11-down.png<>uid://7bvb1hhm3m76::::res://assets/Main Menu Assets/Level Select/Button12-up.png<>uid://dj5la2gbbn58r::::res://assets/Main Menu Assets/Level Select/Button12-down.png<>uid://dm02ek7q47yhj::::res://assets/Main Menu Assets/Level Select/Button13-up.png<>uid://r676841sw432::::res://assets/Main Menu Assets/Level Select/Button13-down.png<>uid://bke1i7r75dpn4::::res://assets/Main Menu Assets/Level Select/Button14-up.png<>uid://bpsvopyuk7i2b::::res://assets/Main Menu Assets/Level Select/Button14-down.png<>uid://6ipvhbmc1xrm::::res://assets/Main Menu Assets/Level Select/Button15-up.png<>uid://c4ow58mc3dw76::::res://assets/Main Menu Assets/Level Select/Button15-down.png<>uid://dlqei6h8v0xme::::res://assets/Main Menu Assets/backbutton-up.png<>uid://dtlora4a1ik5q::::res://assets/Main Menu Assets/backbutton-down.png
+main_menu.tscn::PackedScene::2198407506177316443::1729463608::0::1::::<><>::res://scripts/main_menu.gd<>uid://sdckikkonbdl::::res://assets/Main Menu Assets/mainscreen.png<>uid://dmxs2dpe2y646::::res://assets/Main Menu Assets/startbutton-up.png<>uid://pa6c0dd8pbwi::::res://assets/Main Menu Assets/startbutton-down.png<>uid://bj5grny8s2atx::::res://assets/Main Menu Assets/optionsbutton-up.png<>uid://7adneoxxecd5::::res://assets/Main Menu Assets/optionsbutton-down.png<>uid://b0lq0o0aemwnh::::res://assets/Main Menu Assets/quitbutton-up.png<>uid://d7fije4pf7lp::::res://assets/Main Menu Assets/quitbutton-down.png
+options_menu.tscn::PackedScene::7165244350448618947::1729463608::0::1::::<><>::res://scripts/options_menu.gd<>uid://25lcma7nuygk::::res://assets/Main Menu Assets/Level Select/levelselectscreen.png<>uid://dlqei6h8v0xme::::res://assets/Main Menu Assets/backbutton-up.png<>uid://dtlora4a1ik5q::::res://assets/Main Menu Assets/backbutton-down.png<>uid://bhiy8i0e7l27l::::res://assets/Main Menu Assets/fullscreen-enabled.png<>uid://rvf585rxwyby::::res://assets/Main Menu Assets/fullscreen-disabled.png
+pause_menu.tscn::PackedScene::618317741426905756::1729476924::0::1::::<><>::res://scripts/pause_menu.gd<>uid://dlqei6h8v0xme::::res://assets/Main Menu Assets/backbutton-up.png<>uid://dtlora4a1ik5q::::res://assets/Main Menu Assets/backbutton-down.png<>uid://c5x21p5dxjuf8::::res://assets/Main Menu Assets/resumebutton-up.png<>uid://b40nii2fn4xej::::res://assets/Main Menu Assets/resumebutton-down.png<>uid://0hpenvfbv4cu::::res://assets/Keyboard Letters and Symbols.png<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>uid://d27bnil3wlfay::::res://assets/Keyboard Extras.png
+player.tscn::PackedScene::4093284851029089395::1729476855::0::1::::<><>::res://scripts/player.gd<>uid://co2q86hugutet::::res://assets/Player Character/ThiefMainCharacter-Sheet.png<>res://scripts/character_state_machine.gd<>res://scripts/GroundState.gd<>res://scripts/AirState.gd<>res://scripts/LandingState.gd<>res://scripts/statedebuglabel.gd<>res://scripts/slidingState.gd<>res://scripts/climbingState.gd<>res://scripts/death.gd<>res://scripts/statedebuglabel_2.gd<>uid://i2ruq572d7rs::::res://scenes/pause_menu.tscn
+level8.tscn::PackedScene::1469023848925896786::1729479091::0::1::::<><>::uid://byk22k2gt7eul::::res://scenes/player.tscn<>uid://kjrsxq64pyhi::::res://assets/Tileset Sprites/medievalgamejamtileset(final).png
+skull_bat.tscn::PackedScene::750921910086889704::1729472242::0::1::::<><>::res://scripts/skull_bat.gd<>uid://bikuifldme511::::res://scenes/killbox.tscn<>uid://c0i42k7uvxxsa::::res://assets/Enemy Sprites/skullbat-Sheet.png
+transition_zone.tscn::PackedScene::8050471452728428913::1729392396::0::1::::<><>::res://scripts/transition_zone.gd
+::res://scripts/::1729476853
+AirState.gd::GDScript::-1::1729393421::0::1::::AirState<>State<>::
+character_state_machine.gd::GDScript::-1::1728948325::0::1::::CharacterStateMachine<>Node<>::
+climbing.gd::GDScript::-1::1727726983::0::1::::<>Node<>::
+climbingState.gd::GDScript::-1::1729372667::0::1::::ClimbingState<>State<>::
+death.gd::GDScript::-1::1729386596::0::1::::DeathState<>State<>::
+GroundState.gd::GDScript::-1::1729393343::0::1::::GroundState<>State<>::
+killbox.gd::GDScript::-1::1729387679::0::1::::<>Area2D<>::
+LandingState.gd::GDScript::-1::1729393445::0::1::::LandingState<>State<>::
+levelSelectButton.gd::GDScript::-1::1729380037::0::1::::<>TextureButton<>::
+level_select_menu.gd::GDScript::-1::1729392588::0::1::::<>Control<>::
+main_menu.gd::GDScript::-1::1729380693::0::1::::<>Control<>::
+options_menu.gd::GDScript::-1::1729459025::0::1::::<>Control<>::
+pause_menu.gd::GDScript::-1::1729476853::0::1::::<>Control<>::
+player.gd::GDScript::-1::1729465934::0::1::::<>CharacterBody2D<>::
+skull_bat.gd::GDScript::-1::1729387679::0::1::::<>Node2D<>::
+sliding.gd::GDScript::-1::1727297923::0::1::::<>Node<>::
+slidingState.gd::GDScript::-1::1729380954::0::1::::SlidingState<>State<>::
+State.gd::GDScript::-1::1727221035::0::1::::State<>Node<>::
+statedebuglabel.gd::GDScript::-1::1728948325::0::1::::<>Label<>::
+statedebuglabel_2.gd::GDScript::-1::1728948325::0::1::::<>Label<>::
+state_machine.gd::GDScript::-1::1727221035::0::1::::<>Node<>::
+transition_zone.gd::GDScript::-1::1729380928::0::1::::<>Area2D<>::
