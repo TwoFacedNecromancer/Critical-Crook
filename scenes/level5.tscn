@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://kjrsxq64pyhi" path="res://assets/Tileset Sprites/medievalgamejamtileset(final).png" id="1_j42d4"]
 [ext_resource type="PackedScene" uid="uid://byk22k2gt7eul" path="res://scenes/player.tscn" id="2_fid1w"]
-[ext_resource type="PackedScene" path="res://scenes/transition_zone.tscn" id="3_iweeh"]
+[ext_resource type="PackedScene" uid="uid://dmxydap260r7v" path="res://scenes/transition_zone.tscn" id="3_iweeh"]
 [ext_resource type="PackedScene" uid="uid://kx0tryky4kii" path="res://scenes/skull_bat.tscn" id="4_qbyci"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh7li"]

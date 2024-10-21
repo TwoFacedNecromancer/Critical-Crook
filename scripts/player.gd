@@ -9,6 +9,7 @@ extends CharacterBody2D
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var state_machine: CharacterStateMachine = $CharacterStateMachine
+@onready var pause_menu: Control = $"Camera2D/Pause Menu"
 
 var timer : float = 1.6
 
@@ -20,7 +21,7 @@ func _ready():
 var isdead = false
 
 func _physics_process(delta: float) -> void:
-	if isdead == true:
+	if isdead == true or pause_menu.paused == true:
 		return
 	if(state_machine.current_state.name == "Air" and timer >= 0):
 		timer -= 0.2 * delta
