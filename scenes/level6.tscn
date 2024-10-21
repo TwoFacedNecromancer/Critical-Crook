@@ -201,6 +201,7 @@ position = Vector2(41, -22)
 
 [node name="Scene Zone" parent="." instance=ExtResource("3_stsri")]
 position = Vector2(-197, -626)
+nextScene = "res://scenes/level7.tscn"
 
 [node name="killboxes" type="Node" parent="."]
 

@@ -167,6 +167,7 @@ position = Vector2(-7, -23)
 
 [node name="Scene Zone" parent="." instance=ExtResource("3_iweeh")]
 position = Vector2(24, -1055)
+nextScene = "res://scenes/level6.tscn"
 
 [node name="SkullBat" parent="." instance=ExtResource("4_qbyci")]
 position = Vector2(0, -81)
