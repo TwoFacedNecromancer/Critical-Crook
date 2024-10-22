@@ -8,8 +8,6 @@ extends Node2D
 
 const speed = 60
 var direction = -1
-var timer = 360
-
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

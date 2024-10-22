@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://i2ruq572d7rs"]
+[gd_scene load_steps=9 format=3 uid="uid://i2ruq572d7rs"]
 
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_egheg"]
 [ext_resource type="Texture2D" uid="uid://dlqei6h8v0xme" path="res://assets/Main Menu Assets/backbutton-up.png" id="2_x2048"]
 [ext_resource type="Texture2D" uid="uid://dtlora4a1ik5q" path="res://assets/Main Menu Assets/backbutton-down.png" id="3_2q4ci"]
+[ext_resource type="Texture2D" uid="uid://c5x21p5dxjuf8" path="res://assets/Main Menu Assets/resumebutton-up.png" id="4_l3scu"]
+[ext_resource type="Texture2D" uid="uid://b40nii2fn4xej" path="res://assets/Main Menu Assets/resumebutton-down.png" id="5_ih7td"]
+[ext_resource type="Texture2D" uid="uid://0hpenvfbv4cu" path="res://assets/Keyboard Letters and Symbols.png" id="6_uaguc"]
+[ext_resource type="Texture2D" uid="uid://co2q86hugutet" path="res://assets/Player Character/ThiefMainCharacter-Sheet.png" id="7_m8epj"]
+[ext_resource type="Texture2D" uid="uid://d27bnil3wlfay" path="res://assets/Keyboard Extras.png" id="8_swqvw"]
 
 [node name="Pause Menu" type="Control"]
 layout_mode = 3
@@ -25,12 +30,115 @@ color = Color(0, 0, 0, 0.588235)
 [node name="BackToMenu" type="TextureButton" parent="."]
 z_index = 3
 layout_mode = 0
-offset_left = 1659.0
-offset_top = 882.0
-offset_right = 1707.0
-offset_bottom = 922.0
+offset_left = 840.0
+offset_top = 800.0
+offset_right = 888.0
+offset_bottom = 840.0
 scale = Vector2(5, 5)
 texture_normal = ExtResource("2_x2048")
 texture_pressed = ExtResource("3_2q4ci")
 
+[node name="ResumeButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 576.0
+offset_right = 864.0
+offset_bottom = 616.0
+scale = Vector2(5, 5)
+texture_normal = ExtResource("4_l3scu")
+texture_pressed = ExtResource("5_ih7td")
+
+[node name="WASD" type="Node2D" parent="."]
+scale = Vector2(1.5, 1.5)
+
+[node name="W" type="Sprite2D" parent="WASD"]
+position = Vector2(215, 90)
+scale = Vector2(5, 5)
+texture = ExtResource("6_uaguc")
+region_enabled = true
+region_rect = Rect2(97, 66, 13, 12)
+
+[node name="S" type="Sprite2D" parent="WASD"]
+position = Vector2(215, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("6_uaguc")
+region_enabled = true
+region_rect = Rect2(33, 66, 13, 12)
+
+[node name="D" type="Sprite2D" parent="WASD"]
+position = Vector2(300, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("6_uaguc")
+region_enabled = true
+region_rect = Rect2(49, 34, 13, 12)
+
+[node name="A" type="Sprite2D" parent="WASD"]
+position = Vector2(130, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("6_uaguc")
+region_enabled = true
+region_rect = Rect2(1, 34, 13, 12)
+
+[node name="RunSprite" type="Sprite2D" parent="WASD"]
+position = Vector2(213.333, 256)
+scale = Vector2(2.66667, 2.66667)
+texture = ExtResource("7_m8epj")
+region_enabled = true
+region_rect = Rect2(127, 0, 32, 32)
+
+[node name="Shift" type="Node2D" parent="."]
+position = Vector2(456, 0)
+scale = Vector2(1.5, 1.5)
+
+[node name="Shift" type="Sprite2D" parent="Shift"]
+position = Vector2(208, 170.667)
+scale = Vector2(5, 5)
+texture = ExtResource("8_swqvw")
+region_enabled = true
+region_rect = Rect2(2, 18, 28, 12)
+
+[node name="SlideSprite" type="Sprite2D" parent="Shift"]
+position = Vector2(208, 256)
+scale = Vector2(2.66667, 2.66667)
+texture = ExtResource("7_m8epj")
+region_enabled = true
+region_rect = Rect2(671, 0, 32, 32)
+
+[node name="Space" type="Node2D" parent="."]
+position = Vector2(840, 0)
+scale = Vector2(1.5, 1.5)
+
+[node name="Shift" type="Sprite2D" parent="Space"]
+position = Vector2(208, 170.667)
+scale = Vector2(5, 5)
+texture = ExtResource("8_swqvw")
+region_enabled = true
+region_rect = Rect2(65, 34, 30, 12)
+
+[node name="JumpSprite" type="Sprite2D" parent="Space"]
+position = Vector2(208, 256)
+scale = Vector2(2.66667, 2.66667)
+texture = ExtResource("7_m8epj")
+region_enabled = true
+region_rect = Rect2(447, 1, 32, 31)
+
+[node name=";" type="Node2D" parent="."]
+position = Vector2(1224, 0)
+scale = Vector2(1.5, 1.5)
+
+[node name=";" type="Sprite2D" parent=";"]
+position = Vector2(208, 170.667)
+scale = Vector2(5, 5)
+texture = ExtResource("6_uaguc")
+region_enabled = true
+region_rect = Rect2(113, 82, 13, 12)
+
+[node name="JumpSprite" type="Sprite2D" parent=";"]
+position = Vector2(208, 256)
+scale = Vector2(2.66667, 2.66667)
+texture = ExtResource("7_m8epj")
+region_enabled = true
+region_rect = Rect2(768, 0, 32, 32)
+
 [connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="pressed" from="ResumeButton" to="." method="_on_resume_button_pressed"]

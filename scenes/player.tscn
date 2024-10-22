@@ -434,6 +434,7 @@ transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(-155, -120)
 
 [node name="player" type="CharacterBody2D"]
+z_index = 5
 collision_mask = 3
 script = ExtResource("1_rpi6m")
 
@@ -500,9 +501,10 @@ ground_state = NodePath("../Ground")
 air_state = NodePath("../Air")
 death_state = NodePath("../Death")
 
-[node name="Climbing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("air_state")]
+[node name="Climbing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("air_state", "death_state")]
 script = ExtResource("8_mgiqj")
 air_state = NodePath("../Air")
+death_state = NodePath("../Death")
 
 [node name="Death" type="Node" parent="CharacterStateMachine"]
 script = ExtResource("9_ocmt1")
@@ -529,7 +531,6 @@ script = ExtResource("10_hok0x")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
 process_callback = 0
-limit_bottom = 190
 
 [node name="Pause Menu" parent="Camera2D" instance=ExtResource("12_35eue")]
 visible = false

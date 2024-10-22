@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cf42y6wq5k45f"]
+[gd_scene load_steps=24 format=3 uid="uid://cf42y6wq5k45f"]
 
 [ext_resource type="Script" path="res://scripts/level_select_menu.gd" id="1_bw1fv"]
 [ext_resource type="Texture2D" uid="uid://25lcma7nuygk" path="res://assets/Main Menu Assets/Level Select/levelselectscreen.png" id="1_lba7t"]
@@ -21,18 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://bd1ikwmtrgfbg" path="res://assets/Main Menu Assets/Level Select/Button08-down.png" id="18_cvhli"]
 [ext_resource type="Texture2D" uid="uid://cw3wga52ju2k6" path="res://assets/Main Menu Assets/Level Select/Button09-up.png" id="19_d6wau"]
 [ext_resource type="Texture2D" uid="uid://b1hamdfbcetti" path="res://assets/Main Menu Assets/Level Select/Button09-down.png" id="20_3nxjg"]
-[ext_resource type="Texture2D" uid="uid://dwt5wmplg03cn" path="res://assets/Main Menu Assets/Level Select/Button10-up.png" id="21_eoqfn"]
-[ext_resource type="Texture2D" uid="uid://r7gvernjc1ab" path="res://assets/Main Menu Assets/Level Select/Button10-down.png" id="22_6sfmb"]
-[ext_resource type="Texture2D" uid="uid://bny8vypf6jceg" path="res://assets/Main Menu Assets/Level Select/Button11-up.png" id="23_12bme"]
-[ext_resource type="Texture2D" uid="uid://bevufsqlwmcex" path="res://assets/Main Menu Assets/Level Select/Button11-down.png" id="24_b78wr"]
-[ext_resource type="Texture2D" uid="uid://7bvb1hhm3m76" path="res://assets/Main Menu Assets/Level Select/Button12-up.png" id="25_gj2wf"]
-[ext_resource type="Texture2D" uid="uid://dj5la2gbbn58r" path="res://assets/Main Menu Assets/Level Select/Button12-down.png" id="26_h5ni5"]
-[ext_resource type="Texture2D" uid="uid://dm02ek7q47yhj" path="res://assets/Main Menu Assets/Level Select/Button13-up.png" id="27_lk1ve"]
-[ext_resource type="Texture2D" uid="uid://r676841sw432" path="res://assets/Main Menu Assets/Level Select/Button13-down.png" id="28_q6cm4"]
-[ext_resource type="Texture2D" uid="uid://bke1i7r75dpn4" path="res://assets/Main Menu Assets/Level Select/Button14-up.png" id="29_m5be8"]
-[ext_resource type="Texture2D" uid="uid://bpsvopyuk7i2b" path="res://assets/Main Menu Assets/Level Select/Button14-down.png" id="30_eh5hu"]
-[ext_resource type="Texture2D" uid="uid://6ipvhbmc1xrm" path="res://assets/Main Menu Assets/Level Select/Button15-up.png" id="31_bs4fb"]
-[ext_resource type="Texture2D" uid="uid://c4ow58mc3dw76" path="res://assets/Main Menu Assets/Level Select/Button15-down.png" id="32_iyb1b"]
 [ext_resource type="Texture2D" uid="uid://dlqei6h8v0xme" path="res://assets/Main Menu Assets/backbutton-up.png" id="33_mpe4o"]
 [ext_resource type="Texture2D" uid="uid://dtlora4a1ik5q" path="res://assets/Main Menu Assets/backbutton-down.png" id="34_hwdgm"]
 
@@ -57,12 +45,12 @@ texture = ExtResource("1_lba7t")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 456.0
+offset_left = 664.0
 offset_top = 240.0
-offset_right = 792.0
+offset_right = 864.0
 offset_bottom = 440.0
 scale = Vector2(3, 3)
-columns = 5
+columns = 3
 
 [node name="Button01" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
@@ -111,54 +99,21 @@ layout_mode = 2
 texture_normal = ExtResource("15_g7mvs")
 texture_pressed = ExtResource("16_fmkla")
 script = ExtResource("3_f5yis")
+selectScene = "res://scenes/level7.tscn"
 
 [node name="Button08" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("17_64fa4")
 texture_pressed = ExtResource("18_cvhli")
 script = ExtResource("3_f5yis")
+selectScene = "res://scenes/level8.tscn"
 
 [node name="Button09" type="TextureButton" parent="GridContainer"]
 layout_mode = 2
 texture_normal = ExtResource("19_d6wau")
 texture_pressed = ExtResource("20_3nxjg")
 script = ExtResource("3_f5yis")
-
-[node name="Button10" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
-texture_normal = ExtResource("21_eoqfn")
-texture_pressed = ExtResource("22_6sfmb")
-script = ExtResource("3_f5yis")
-
-[node name="Button11" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
-texture_normal = ExtResource("23_12bme")
-texture_pressed = ExtResource("24_b78wr")
-script = ExtResource("3_f5yis")
-
-[node name="Button12" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
-texture_normal = ExtResource("25_gj2wf")
-texture_pressed = ExtResource("26_h5ni5")
-script = ExtResource("3_f5yis")
-
-[node name="Button13" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
-texture_normal = ExtResource("27_lk1ve")
-texture_pressed = ExtResource("28_q6cm4")
-script = ExtResource("3_f5yis")
-
-[node name="Button14" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
-texture_normal = ExtResource("29_m5be8")
-texture_pressed = ExtResource("30_eh5hu")
-script = ExtResource("3_f5yis")
-
-[node name="Button15" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
-texture_normal = ExtResource("31_bs4fb")
-texture_pressed = ExtResource("32_iyb1b")
-script = ExtResource("3_f5yis")
+selectScene = "res://scenes/level9.tscn"
 
 [node name="BackButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -179,10 +134,4 @@ stretch_mode = 4
 [connection signal="pressed" from="GridContainer/Button07" to="GridContainer/Button07" method="_on_pressed"]
 [connection signal="pressed" from="GridContainer/Button08" to="GridContainer/Button08" method="_on_pressed"]
 [connection signal="pressed" from="GridContainer/Button09" to="GridContainer/Button09" method="_on_pressed"]
-[connection signal="pressed" from="GridContainer/Button10" to="GridContainer/Button10" method="_on_pressed"]
-[connection signal="pressed" from="GridContainer/Button11" to="GridContainer/Button11" method="_on_pressed"]
-[connection signal="pressed" from="GridContainer/Button12" to="GridContainer/Button12" method="_on_pressed"]
-[connection signal="pressed" from="GridContainer/Button13" to="GridContainer/Button13" method="_on_pressed"]
-[connection signal="pressed" from="GridContainer/Button14" to="GridContainer/Button14" method="_on_pressed"]
-[connection signal="pressed" from="GridContainer/Button15" to="GridContainer/Button15" method="_on_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
