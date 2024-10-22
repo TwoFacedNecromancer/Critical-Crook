@@ -10,6 +10,9 @@ class_name GroundState
 @export var sliding_state : State
 @export var death_state : State
 
+var can_jump : bool = true
+var can_slide : bool = true
+
 #sets which animation is used for jump
 @export var jump_animation : String = "jump_start"
 
@@ -34,20 +37,28 @@ func state_process(delta):
 		
 	if(Input.is_action_pressed("jump")):
 		jump()
+	else:
+		can_jump = true
 	#speed boost if jumping from a slide
 	if(Input.is_action_pressed("slide") and get_parent().get_parent().isdead==false):
 		if(character.velocity.x != 0):
 			slide()
+	else:
+		can_slide = true
 
 #jump function
 func jump():
-	character.velocity.y = jump_velocity
-	next_state = air_state
-	playback.travel("jump_start")
+	if(can_jump == true):
+		can_jump = false
+		character.velocity.y = jump_velocity
+		next_state = air_state
+		playback.travel("jump_start")
 	
 #slide function
 func slide():
-	slidebox.disabled = false
-	hitbox.disabled = true
-	next_state = sliding_state
-	playback.travel("sliding")
+	if(can_slide == true):
+		can_slide = false
+		slidebox.disabled = false
+		hitbox.disabled = true
+		next_state = sliding_state
+		playback.travel("sliding")

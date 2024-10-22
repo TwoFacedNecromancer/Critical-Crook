@@ -53,13 +53,17 @@ func state_process(delta):
 		#jumps
 		if(character.is_on_floor() and Input.is_action_pressed("jump")):
 			if(overlap == false):
-				hitbox.disabled = false
-				slidebox.disabled = true
-				character.speed_boost += 50.0
-				jump()
+				if(get_parent().find_child("Ground").can_jump == true):
+					hitbox.disabled = false
+					slidebox.disabled = true
+					character.speed_boost += 50.0
+					jump()
+		elif(character.is_on_floor() and !Input.is_action_pressed("jump")):
+			get_parent().find_child("Ground").can_jump = true
 
 #jump function
 func jump():
+	get_parent().find_child("Ground").can_jump = false
 	timer = 4.0
 	character.velocity.y = jump_velocity
 	next_state = air_state
