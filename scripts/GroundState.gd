@@ -31,13 +31,11 @@ func state_process(delta):
 	if(!character.is_on_floor()):
 		playback.travel("jump_start")
 		next_state = air_state
-
-#jump
-func state_input(event : InputEvent):
-	if(event.is_action_pressed("jump")):
+		
+	if(Input.is_action_pressed("jump")):
 		jump()
 	#speed boost if jumping from a slide
-	if(event.is_action_pressed("slide") and get_parent().get_parent().isdead==false):
+	if(Input.is_action_pressed("slide") and get_parent().get_parent().isdead==false):
 		if(character.velocity.x != 0):
 			slide()
 
